@@ -8,40 +8,40 @@ namespace 大荒狩计分
     {
         public const double TIMES_12 = 1.0;
         public const double TIMES_15 = 1.4;
-        public const int LZ_6 = 50;
-        public const int LZ_5 = 20;
-        public const int LZ_4 = 10;
-        public const int SP02 = 150;
-        public const int SP04 = 100;
-        public const int BHYY_VALUE = 30;
-        public const int TST_VALUE = 40;
-        public const int GSJG_VALUE = 40;
-        public const int SRWJ_VALUE = 50;
-        public const int HCWSH_VALUE = 60;
-        public const int YLZZ_VALUE = 70;
-        public const int BNWR_VALUE = 80;
-        public const int WZXJ_VALUE = 80;
-        public const int RZW_VALUE = 100;
-        public const int SYS_VALUE = 60;
-        public const int SL_VALUE = 100;
-        public const int F3YIGE_VALUE = 30;
-        public const int HHCD_VALUE = 30;
-        public const int YXWM_VALUE = 30;
-        public const int YXWM_JS = 15;
-        public const int YXWM_WL = 150;
-        public const int ZYSZ_VALUE = 50;
-        public const int ZYSZ_JS = 40;
-        public const int ZYSZ_WL = 200;
-        public const int LWWL_VALUE = 10;
-        public const int WEYS_VALUE = 0;
-        public const int SHZX_VALUE = 130;
-        public const int SMZS_VALUE = 50;
-        public const int XWZO_VALUE = 150;
-        public const int YD_VALUE = 70;
-        public const int SB_VALUE = 350;
-        public const int SGZS_VALUE = 140;
-        public const int MRYH_VALUE = 200;
-        public const int YINCANG = 10;
+        public const int LZ_6 = 20;
+        public const int LZ_5 = 10;
+        public const int LZ_4 = 5;
+        public const int KLMD_VALUE = 10;
+        public const int DQYP_KNND_VALUE = 10;
+        public const int XHYD_VALUE = 20;
+        public const int JXDC_MWND_VALUE = 20;
+        public const int XBKC_TZND_VALUE = 20;
+        public const int JRCCX_VALUE = 25;
+        public const int TDFS_VALUE = 25;
+        public const int JHGZ_VALUE = 25;
+        public const int SSDKQ_VALUE = 40;
+        public const int MQGS_VALUE = 40;
+        public const int F3YIGE_VALUE = 20;
+        public const int SBDSD_VALUE = 30;
+        public const int XHD_VALUE = 30;
+        public const int WJDBF_VALUE = 40;
+        public const int ZCCM_VALUE = 40;
+        public const int TS_JJ = 10;
+        public const int YSGL_VALUE = 0;
+        public int[] YSGL_JS = { 0, 15, 25, 45 };
+        public int[] YSGL_JJ_JS = { 0, 25, 35, 45, 60 };
+        public const int YSGL_JS3_WL = 50;
+        public const int YSGL_JJ_JS4_WL = 70;
+        public const int JJSK_VALUE = 10;
+        public const int CY_VALUE = 60;
+        public const int SC_VALUE = 100;
+        public const int JJ23_LIANDA = 50;
+        public const int JJ_ND = 20;
+        public const int JJ_HL = 20;
+        public const int YINCANG = 5;
+        public const int GX = 1;
+        public const int MT = 10;
+        public const int GGG = 10;
         public const int CANGPIN = 10;
         public const int BANZI = 5;
         public const int RBAN_LV1 = 50;
@@ -78,15 +78,26 @@ namespace 大荒狩计分
         public int lz4Num = 0;
 
         public int jjPoint = 0;
-        public int jjPoint1 = 0;
-        public int jjPoint2 = 0;
-        public int jjPoint3 = 0;
-        public int sp02Point = 0;
-        public int sp04Point = 0;
+        public int jjskPointTot = 0;
+        public int jjskPoint = 0;
+        public int jjskNdPoint = 0;
+        public int jjskHlPoint = 0;
+        public int cyPointTot = 0;
+        public int cyPoint = 0;
+        public int cyNdPoint = 0;
+        public int cyHlPoint = 0;
+        public int scPointTot = 0;
+        public int scPoint = 0;
+        public int scNdPoint = 0;
+        public int scHlPoint = 0;
+        public int lianDaPoint = 0;
 
-        public int cpbzPoint = 0;
+        public int sxPoint = 0;
         public int cpNum = 0;
-        public int bzNum = 0;
+        public int sxNum = 0;
+        public int fdNum = 0;
+
+        public int xzPoint = 0;
 
         public int rbanPoint = 0;
 
@@ -106,7 +117,7 @@ namespace 大荒狩计分
             {
                 bhyyNum--;
                 bhyyNumShow.Text = bhyyNum.ToString();
-                jinJiPoint -= BHYY_VALUE;
+                jinJiPoint -= KLMD_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -115,7 +126,7 @@ namespace 大荒狩计分
         {
             bhyyNum++;
             bhyyNumShow.Text = bhyyNum.ToString();
-            jinJiPoint += BHYY_VALUE;
+            jinJiPoint += KLMD_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -125,7 +136,7 @@ namespace 大荒狩计分
             {
                 tstNum--;
                 tstNumShow.Text = tstNum.ToString();
-                jinJiPoint -= TST_VALUE;
+                jinJiPoint -= DQYP_KNND_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -134,7 +145,7 @@ namespace 大荒狩计分
         {
             tstNum++;
             tstNumShow.Text = tstNum.ToString();
-            jinJiPoint += TST_VALUE;
+            jinJiPoint += DQYP_KNND_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -144,7 +155,7 @@ namespace 大荒狩计分
             {
                 gsjgNum--;
                 gsjgNumShow.Text = gsjgNum.ToString();
-                jinJiPoint -= GSJG_VALUE;
+                jinJiPoint -= XHYD_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -153,7 +164,7 @@ namespace 大荒狩计分
         {
             gsjgNum++;
             gsjgNumShow.Text = gsjgNum.ToString();
-            jinJiPoint += GSJG_VALUE;
+            jinJiPoint += XHYD_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -163,7 +174,7 @@ namespace 大荒狩计分
             {
                 srwjNum--;
                 srwjNumShow.Text = srwjNum.ToString();
-                jinJiPoint -= SRWJ_VALUE;
+                jinJiPoint -= JXDC_MWND_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -172,7 +183,7 @@ namespace 大荒狩计分
         {
             srwjNum++;
             srwjNumShow.Text = srwjNum.ToString();
-            jinJiPoint += SRWJ_VALUE;
+            jinJiPoint += JXDC_MWND_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -182,7 +193,7 @@ namespace 大荒狩计分
             {
                 hcwshNum--;
                 hcwshNumShow.Text = hcwshNum.ToString();
-                jinJiPoint -= HCWSH_VALUE;
+                jinJiPoint -= XBKC_TZND_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -191,7 +202,7 @@ namespace 大荒狩计分
         {
             hcwshNum++;
             hcwshNumShow.Text = hcwshNum.ToString();
-            jinJiPoint += HCWSH_VALUE;
+            jinJiPoint += XBKC_TZND_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -201,7 +212,7 @@ namespace 大荒狩计分
             {
                 ylzzNum--;
                 ylzzNumShow.Text = ylzzNum.ToString();
-                jinJiPoint -= YLZZ_VALUE;
+                jinJiPoint -= JRCCX_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -210,7 +221,7 @@ namespace 大荒狩计分
         {
             ylzzNum++;
             ylzzNumShow.Text = ylzzNum.ToString();
-            jinJiPoint += YLZZ_VALUE;
+            jinJiPoint += JRCCX_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -220,7 +231,7 @@ namespace 大荒狩计分
             {
                 bnwrNum--;
                 bnwrNumShow.Text = bnwrNum.ToString();
-                jinJiPoint -= BNWR_VALUE;
+                jinJiPoint -= TDFS_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -229,7 +240,7 @@ namespace 大荒狩计分
         {
             bnwrNum++;
             bnwrNumShow.Text = bnwrNum.ToString();
-            jinJiPoint += BNWR_VALUE;
+            jinJiPoint += TDFS_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -239,7 +250,7 @@ namespace 大荒狩计分
             {
                 wzxjNum--;
                 wzxjNumShow.Text = wzxjNum.ToString();
-                jinJiPoint -= WZXJ_VALUE;
+                jinJiPoint -= JHGZ_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -248,7 +259,7 @@ namespace 大荒狩计分
         {
             wzxjNum++;
             wzxjNumShow.Text = wzxjNum.ToString();
-            jinJiPoint += WZXJ_VALUE;
+            jinJiPoint += JHGZ_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -258,7 +269,7 @@ namespace 大荒狩计分
             {
                 rzwNum--;
                 rzwNumShow.Text = rzwNum.ToString();
-                jinJiPoint -= RZW_VALUE;
+                jinJiPoint -= SSDKQ_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -267,7 +278,7 @@ namespace 大荒狩计分
         {
             rzwNum++;
             rzwNumShow.Text = rzwNum.ToString();
-            jinJiPoint += RZW_VALUE;
+            jinJiPoint += SSDKQ_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -277,7 +288,7 @@ namespace 大荒狩计分
             {
                 sysNum--;
                 sysNumShow.Text = sysNum.ToString();
-                jinJiPoint -= SYS_VALUE;
+                jinJiPoint -= MQGS_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
         }
@@ -286,205 +297,317 @@ namespace 大荒狩计分
         {
             sysNum++;
             sysNumShow.Text = sysNum.ToString();
-            jinJiPoint += SYS_VALUE;
-            jinJiPointShow.Text = jinJiPoint.ToString();
-        }
-
-        private void slMinus_Click(object sender, EventArgs e)
-        {
-            if (slNum > 0)
-            {
-                slNum--;
-                slNumShow.Text = slNum.ToString();
-                jinJiPoint -= SL_VALUE;
-                jinJiPointShow.Text = jinJiPoint.ToString();
-            }
-        }
-
-        private void slPlus_Click(object sender, EventArgs e)
-        {
-            slNum++;
-            slNumShow.Text = slNum.ToString();
-            jinJiPoint += SL_VALUE;
-            jinJiPointShow.Text = jinJiPoint.ToString();
-        }
-
-        private void lwwlMinus_Click(object sender, EventArgs e)
-        {
-            if (lwwlNum > 0)
-            {
-                lwwlNum--;
-                lwwlNumShow.Text = lwwlNum.ToString();
-                jinJiPoint -= LWWL_VALUE;
-                jinJiPointShow.Text = jinJiPoint.ToString();
-            }
-        }
-
-        private void lwwlPlus_Click(object sender, EventArgs e)
-        {
-            lwwlNum++;
-            lwwlNumShow.Text = lwwlNum.ToString();
-            jinJiPoint += LWWL_VALUE;
+            jinJiPoint += MQGS_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
         private void hhcdSx_CheckedChanged(object sender, EventArgs e)
         {
-            if (hhcdSx.Checked)
+            if (sbdsd.Checked)
             {
-                teShuPoint += HHCD_VALUE;
+                teShuPoint += SBDSD_VALUE;
+                sbdsd_jj.Enabled = true;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
-            else if (!hhcdSx.Checked)
+            else if (!sbdsd.Checked)
             {
-                teShuPoint -= HHCD_VALUE;
+                teShuPoint -= SBDSD_VALUE;
+                sbdsd_jj.Checked = false;
+                sbdsd_jj.Enabled = false;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void sbdsd_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sbdsd_jj.Checked)
+            {
+                teShuPoint += TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!sbdsd_jj.Checked)
+            {
+                teShuPoint -= TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void xhd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (xhd.Checked)
+            {
+                teShuPoint += XHD_VALUE;
+                xhd_jj.Enabled = true;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!xhd.Checked)
+            {
+                teShuPoint -= XHD_VALUE;
+                xhd_jj.Checked = false;
+                xhd_jj.Enabled = false;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void xhd_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (xhd_jj.Checked)
+            {
+                teShuPoint += TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!xhd_jj.Checked)
+            {
+                teShuPoint -= TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void wjdbf_CheckedChanged(object sender, EventArgs e)
+        {
+            if (wjdbf.Checked)
+            {
+                teShuPoint += WJDBF_VALUE;
+                wjdbf_jj.Enabled = true;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!wjdbf.Checked)
+            {
+                teShuPoint -= WJDBF_VALUE;
+                wjdbf_jj.Checked = false;
+                wjdbf_jj.Enabled = false;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void wjdbf_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (wjdbf_jj.Checked)
+            {
+                teShuPoint += TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!wjdbf_jj.Checked)
+            {
+                teShuPoint -= TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void zccm_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zccm.Checked)
+            {
+                teShuPoint += ZCCM_VALUE;
+                zccm_jj.Enabled = true;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!zccm.Checked)
+            {
+                teShuPoint -= ZCCM_VALUE;
+                zccm_jj.Checked = false;
+                zccm_jj.Enabled = false;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void zccm_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zccm_jj.Checked)
+            {
+                teShuPoint += TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!zccm_jj.Checked)
+            {
+                teShuPoint -= TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
         }
 
         private void yxwmTg_CheckedChanged(object sender, EventArgs e)
         {
-            if (yxwmTg.Checked)
+            if (ysgl.Checked)
             {
                 yxwmNum = 0;
                 yxwmNumShow.Text = yxwmNum.ToString();
-                yxwmPoint = YXWM_VALUE;
-                teShuPoint += YXWM_VALUE;
+                yxwmPoint = YSGL_VALUE;
+                teShuPoint += YSGL_VALUE;
                 teShuPointShow.Text = teShuPoint.ToString();
+                ysgl_jj.Enabled = true;
                 yxwmJs.Enabled = true;
                 yxwmMinus.Enabled = true;
                 yxwmNumShow.Enabled = true;
                 yxwmPlus.Enabled = true;
+                ysgl_wl.Enabled = true;
             }
-            else if (!yxwmTg.Checked)
+            else if (!ysgl.Checked)
             {
-                yxwmNum = 0;
-                yxwmNumShow.Text = yxwmNum.ToString();
                 teShuPoint -= yxwmPoint;
-                yxwmPoint = 0;
+                yxwmNum = 0;
                 teShuPointShow.Text = teShuPoint.ToString();
+                yxwmNumShow.Text = yxwmNum.ToString();
+                yxwmPoint = 0;
+                ysgl_jj.Checked = false;
+                ysgl_jj.Enabled = false;
                 yxwmJs.Enabled = false;
                 yxwmMinus.Enabled = false;
                 yxwmNumShow.Enabled = false;
                 yxwmPlus.Enabled = false;
+                ysgl.Checked = false;
+                ysgl_wl.Checked = false;
+                ysgl_wl.Enabled = false;
             }
+            ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
+        }
+
+        private void ysgl_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ysgl_jj.Checked)
+            {
+                teShuPoint -= yxwmPoint;
+                yxwmPoint = YSGL_VALUE + YSGL_JJ_JS[yxwmNum];
+                teShuPoint += yxwmPoint;
+                ysgl_wl.Checked = false;
+            }
+            else if (!ysgl_jj.Checked)
+            {
+                if (yxwmNum > 3)
+                {
+                    yxwmNum = 3;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                }
+                teShuPoint -= yxwmPoint;
+                yxwmPoint = YSGL_VALUE + YSGL_JS[yxwmNum];
+                teShuPoint += yxwmPoint;
+            }
+            ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
+            teShuPointShow.Text = teShuPoint.ToString();
         }
 
         private void yxwmMinus_Click(object sender, EventArgs e)
         {
-            if (yxwmNum > 0)
+            if (!ysgl_jj.Checked)
             {
-                yxwmNum--;
-                yxwmNumShow.Text = yxwmNum.ToString();
-                teShuPoint -= yxwmPoint;
-                yxwmPoint = YXWM_VALUE + yxwmNum * YXWM_JS;
-                teShuPoint += yxwmPoint;
-                teShuPointShow.Text = teShuPoint.ToString();
+                if (yxwmNum > 0)
+                {
+                    yxwmNum--;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                    teShuPoint -= yxwmPoint;
+                    yxwmPoint = YSGL_VALUE + YSGL_JS[yxwmNum];
+                    teShuPoint += yxwmPoint;
+                    teShuPointShow.Text = teShuPoint.ToString();
+                    ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
+                }
+            }
+            else if (ysgl_jj.Checked)
+            {
+                if (yxwmNum > 0)
+                {
+                    yxwmNum--;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                    teShuPoint -= yxwmPoint;
+                    yxwmPoint = YSGL_VALUE + YSGL_JJ_JS[yxwmNum];
+                    teShuPoint += yxwmPoint;
+                    teShuPointShow.Text = teShuPoint.ToString();
+                    ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
+                }
             }
         }
 
         private void yxwmPlus_Click(object sender, EventArgs e)
         {
-            if (yxwmNum < 6)
+            if (!ysgl_jj.Checked)
             {
-                yxwmNum++;
-                yxwmNumShow.Text = yxwmNum.ToString();
-                yxwmPoint += YXWM_JS;
-                teShuPoint += YXWM_JS;
-                if (yxwmNum == 6)
+                if (yxwmNum < 3)
                 {
+                    yxwmNum++;
+                    yxwmNumShow.Text = yxwmNum.ToString();
                     teShuPoint -= yxwmPoint;
-                    yxwmPoint = YXWM_WL;
+                    yxwmPoint = YSGL_VALUE + YSGL_JS[yxwmNum];
                     teShuPoint += yxwmPoint;
+                    teShuPointShow.Text = teShuPoint.ToString();
+                    ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
                 }
-                teShuPointShow.Text = teShuPoint.ToString();
             }
-        }
-
-        private void zyszTg_CheckedChanged(object sender, EventArgs e)
-        {
-            if (zyszTg.Checked)
+            else if (ysgl_jj.Checked)
             {
-                zyszPoint += ZYSZ_VALUE;
-                teShuPoint += ZYSZ_VALUE;
-                teShuPointShow.Text = teShuPoint.ToString();
-                zyszWl.Enabled = true;
-                zyszJs.Enabled = true;
-                zyszMinus.Enabled = true;
-                zyszNumShow.Enabled = true;
-                zyszPlus.Enabled = true;
-                zyszNum = 0;
-                zyszNumShow.Text = zyszNum.ToString();
-            }
-            else if (!zyszTg.Checked)
-            {
-                teShuPoint -= zyszPoint;
-                zyszPoint = 0;
-                teShuPointShow.Text = teShuPoint.ToString();
-                zyszNum = 0;
-                zyszNumShow.Text = zyszNum.ToString();
-                zyszWl.Checked = false;
-                zyszWl.Enabled = false;
-                zyszJs.Enabled = false;
-                zyszMinus.Enabled = false;
-                zyszNumShow.Enabled = false;
-                zyszPlus.Enabled = false;
-            }
-        }
-
-        private void zyszWl_CheckedChanged(object sender, EventArgs e)
-        {
-            if (zyszWl.Checked)
-            {
-                zyszNum = 3;
-                zyszNumShow.Text = zyszNum.ToString();
-                zyszJs.Enabled = false;
-                zyszMinus.Enabled = false;
-                zyszNumShow.Enabled = false;
-                zyszPlus.Enabled = false;
-                teShuPoint -= zyszPoint;
-                zyszPoint = ZYSZ_WL;
-                teShuPoint += zyszPoint;
-                teShuPointShow.Text = teShuPoint.ToString();
-            }
-            else if (!zyszWl.Checked)
-            {
-                if (zyszTg.Checked)
+                if (yxwmNum < 4)
                 {
-                    zyszJs.Enabled = true;
-                    zyszMinus.Enabled = true;
-                    zyszNumShow.Enabled = true;
-                    zyszPlus.Enabled = true;
-                    teShuPoint -= zyszPoint;
-                    zyszPoint = ZYSZ_VALUE + zyszNum * ZYSZ_JS;
-                    teShuPoint += zyszPoint;
+                    yxwmNum++;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                    teShuPoint -= yxwmPoint;
+                    yxwmPoint = YSGL_VALUE + YSGL_JJ_JS[yxwmNum];
+                    teShuPoint += yxwmPoint;
+                    teShuPointShow.Text = teShuPoint.ToString();
+                    ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
+                }
+            }
+        }
+
+        private void ysgl_wl_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ysgl_jj.Checked)
+            {
+                if (ysgl_wl.Checked)
+                {
+                    yxwmNum = 3;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                    yxwmJs.Enabled = false;
+                    yxwmMinus.Enabled = false;
+                    yxwmNumShow.Enabled = false;
+                    yxwmPlus.Enabled = false;
+                    teShuPoint -= yxwmPoint;
+                    yxwmPoint = YSGL_JS3_WL;
+                    teShuPoint += yxwmPoint;
                     teShuPointShow.Text = teShuPoint.ToString();
                 }
+                else if (!ysgl_wl.Checked)
+                {
+                    if (ysgl.Checked)
+                    {
+                        yxwmJs.Enabled = true;
+                        yxwmMinus.Enabled = true;
+                        yxwmNumShow.Enabled = true;
+                        yxwmPlus.Enabled = true;
+                        teShuPoint -= yxwmPoint;
+                        yxwmPoint = YSGL_VALUE + YSGL_JS[yxwmNum];
+                        teShuPoint += yxwmPoint;
+                        teShuPointShow.Text = teShuPoint.ToString();
+                    }
+                }
             }
-        }
-
-        private void zyszMinus_Click(object sender, EventArgs e)
-        {
-            if (zyszNum > 0)
+            else if (ysgl_jj.Checked)
             {
-                zyszNum--;
-                zyszNumShow.Text = zyszNum.ToString();
-                zyszPoint -= ZYSZ_JS;
-                teShuPoint -= ZYSZ_JS;
-                teShuPointShow.Text = teShuPoint.ToString();
+                if (ysgl_wl.Checked)
+                {
+                    yxwmNum = 4;
+                    yxwmNumShow.Text = yxwmNum.ToString();
+                    yxwmJs.Enabled = false;
+                    yxwmMinus.Enabled = false;
+                    yxwmNumShow.Enabled = false;
+                    yxwmPlus.Enabled = false;
+                    teShuPoint -= yxwmPoint;
+                    yxwmPoint = YSGL_JJ_JS4_WL;
+                    teShuPoint += yxwmPoint;
+                    teShuPointShow.Text = teShuPoint.ToString();
+                }
+                else if (!ysgl_wl.Checked)
+                {
+                    if (ysgl.Checked)
+                    {
+                        yxwmJs.Enabled = true;
+                        yxwmMinus.Enabled = true;
+                        yxwmNumShow.Enabled = true;
+                        yxwmPlus.Enabled = true;
+                        teShuPoint -= yxwmPoint;
+                        yxwmPoint = YSGL_VALUE + YSGL_JJ_JS[yxwmNum];
+                        teShuPoint += yxwmPoint;
+                        teShuPointShow.Text = teShuPoint.ToString();
+                    }
+                }
             }
-        }
-
-        private void zyszPlus_Click(object sender, EventArgs e)
-        {
-            if (zyszNum < 3)
-            {
-                zyszNum++;
-                zyszNumShow.Text = zyszNum.ToString();
-                zyszPoint += ZYSZ_JS;
-                teShuPoint += ZYSZ_JS;
-                teShuPointShow.Text = teShuPoint.ToString();
-            }
+            ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
         }
 
         private void lz6Minus_Click(object sender, EventArgs e)
@@ -545,320 +668,6 @@ namespace 大荒狩计分
             lzPointShow.Text = lzPoint.ToString();
         }
 
-        private void weys_CheckedChanged(object sender, EventArgs e)
-        {
-            if (weys.Checked)
-            {
-                shzx.Checked = false;
-                xwzo.Checked = false;
-                smzs.Checked = false;
-                jjPoint1 = WEYS_VALUE;
-            }
-            else if (!weys.Checked)
-            {
-                jjPoint1 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void shzx_CheckedChanged(object sender, EventArgs e)
-        {
-            if (shzx.Checked)
-            {
-                weys.Checked = false;
-                xwzo.Checked = false;
-                smzs.Checked = false;
-                jjPoint1 = SHZX_VALUE;
-            }
-            else if (!shzx.Checked)
-            {
-                jjPoint1 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void smzs_CheckedChanged(object sender, EventArgs e)
-        {
-            if (smzs.Checked)
-            {
-                weys.Checked = false;
-                xwzo.Checked = false;
-                shzx.Checked = false;
-                jjPoint1 = SMZS_VALUE;
-            }
-            else if (!smzs.Checked)
-            {
-                jjPoint1 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void xwzo_CheckedChanged(object sender, EventArgs e)
-        {
-            if (xwzo.Checked)
-            {
-                weys.Checked = false;
-                shzx.Checked = false;
-                smzs.Checked = false;
-                jjPoint1 = XWZO_VALUE;
-            }
-            else if (!xwzo.Checked)
-            {
-                jjPoint1 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void yd_CheckedChanged(object sender, EventArgs e)
-        {
-            if (yd.Checked)
-            {
-                sb.Checked = false;
-                jjPoint2 = YD_VALUE;
-            }
-            else if (!yd.Checked)
-            {
-                jjPoint2 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void sb_CheckedChanged(object sender, EventArgs e)
-        {
-            if (sb.Checked)
-            {
-                yd.Checked = false;
-                jjPoint2 = SB_VALUE;
-            }
-            else if (!sb.Checked)
-            {
-                jjPoint2 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void sgzs_CheckedChanged(object sender, EventArgs e)
-        {
-            if (sgzs.Checked)
-            {
-                mryh.Checked = false;
-                jjPoint3 = SGZS_VALUE;
-            }
-            else if (!sgzs.Checked)
-            {
-                jjPoint3 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void mryh_CheckedChanged(object sender, EventArgs e)
-        {
-            if (mryh.Checked)
-            {
-                sgzs.Checked = false;
-                jjPoint3 = MRYH_VALUE;
-            }
-            else if (!mryh.Checked)
-            {
-                jjPoint3 = 0;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
-        private void noSd_CheckedChanged(object sender, EventArgs e)
-        {
-            if ((sgzs.Checked || mryh.Checked) && ((yd.Checked || sb.Checked) || (smzs.Checked || xwzo.Checked)) && noSd.Checked)
-            {
-                sp02Point = SP02;
-                tip02.Visible = true;
-            }
-            else
-            {
-                sp02Point = 0;
-                tip02.Visible = false;
-            }
-            if ((sgzs.Checked || mryh.Checked) && ((smzs.Checked || xwzo.Checked) || shzx.Checked))
-            {
-                sp04Point = SP04;
-                tip04.Visible = true;
-            }
-            else
-            {
-                sp04Point = 0;
-                tip04.Visible = false;
-            }
-            jjPoint = jjPoint1 + jjPoint2 + jjPoint3 + sp02Point + sp04Point;
-            jjPointShow.Text = jjPoint.ToString();
-        }
-
         private void ycMinus_Click(object sender, EventArgs e)
         {
             if (ycNum > 0)
@@ -888,212 +697,387 @@ namespace 大荒狩计分
             {
                 cpNum = int.Parse(cpNumShow.Text);
             }
-            cpbzPoint = cpNum * CANGPIN + bzNum * BANZI;
-            cpbzPointShow.Text = cpbzPoint.ToString();
         }
 
         private void bzNumShow_TextChanged(object sender, EventArgs e)
         {
-            if (bzNumShow.Text == "")
+            if (sxNumShow.Text == "")
             {
-                bzNum = 0;
+                sxNum = 0;
             }
             else
             {
-                bzNum = int.Parse(bzNumShow.Text);
-            }
-            cpbzPoint = cpNum * CANGPIN + bzNum * BANZI;
-            cpbzPointShow.Text = cpbzPoint.ToString();
-        }
-
-        private void men_CheckedChanged(object sender, EventArgs e)
-        {
-            if (men.Checked)
-            {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text += rbanPoint.ToString();
+                sxNum = int.Parse(sxNumShow.Text);
             }
         }
 
-        private void yns_CheckedChanged(object sender, EventArgs e)
+        private void jjsk_CheckedChanged(object sender, EventArgs e)
         {
-            if (yns.Checked)
+            if (jjsk.Checked)
             {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
+                jjskPoint = JJSK_VALUE;
+                jjsk_nd.Enabled = true;
+                jjsk_hl.Enabled = true;
+                cy.Checked = false;
+                cy.Enabled = false;
+            }
+            else if (!jjsk.Checked)
+            {
+                jjskPoint = 0;
+                jjsk_nd.Checked = false;
+                jjsk_nd.Enabled = false;
+                jjsk_hl.Checked = false;
+                jjsk_hl.Enabled = false;
+                cy.Enabled = true;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void jjsk_nd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (jjsk_nd.Checked)
+            {
+                jjskNdPoint = JJ_ND;
+            }
+            else if (!jjsk_nd.Checked)
+            {
+                jjskNdPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void jjsk_hl_CheckedChanged(object sender, EventArgs e)
+        {
+            if (jjsk_hl.Checked)
+            {
+                jjskHlPoint = JJ_HL;
+            }
+            else if (!jjsk_hl.Checked)
+            {
+                jjskHlPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void cy_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cy.Checked)
+            {
+                cyPoint = CY_VALUE;
+                cy_nd.Enabled = true;
+                cy_hl.Enabled = true;
+                jjsk.Checked = false;
+                jjsk.Enabled = false;
+            }
+            else if (!cy.Checked)
+            {
+                cyPoint = 0;
+                cy_nd.Checked = false;
+                cy_nd.Enabled = false;
+                cy_hl.Checked = false;
+                cy_hl.Enabled = false;
+                jjsk.Enabled = true;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void cy_nd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cy_nd.Checked)
+            {
+                cyNdPoint = JJ_ND;
+            }
+            else if (!cy_nd.Checked)
+            {
+                cyNdPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void cy_hl_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cy_hl.Checked)
+            {
+                cyHlPoint = JJ_HL;
+            }
+            else if (!cy_hl.Checked)
+            {
+                cyHlPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void sc_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sc.Checked)
+            {
+                scPoint = SC_VALUE;
+                sc_nd.Enabled = true;
+                sc_hl.Enabled = true;
+            }
+            else if (!sc.Checked)
+            {
+                scPoint = 0;
+                sc_nd.Checked = false;
+                sc_nd.Enabled = false;
+                sc_hl.Checked = false;
+                sc_hl.Enabled = false;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void sc_nd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sc_nd.Checked)
+            {
+                scNdPoint = JJ_ND;
+            }
+            else if (!sc_nd.Checked)
+            {
+                scNdPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void sc_hl_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sc_hl.Checked)
+            {
+                scHlPoint = JJ_HL;
+            }
+            else if (!sc_hl.Checked)
+            {
+                scHlPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ23_LIANDA;
+            }
+            else if (!cy.Checked && sc.Checked)
+            {
+                lianDaPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void fen_dui_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
+            {
+                fdLabel.Text = "构思数量";
+                fdLabel.Visible = true;
+                fdNumShow.Visible = true;
+                fdMinus.Visible = true;
+                fdPlus.Visible = true;
+                fdNum = 0;
+                fdNumShow.Text = fdNum.ToString();
+            }
+            else if (fen_dui.SelectedItem.ToString() == "矛头分队" || fen_dui.SelectedItem.ToString() == "蓝图测绘分队")
+            {
+                fdLabel.Text = "关卡数量";
+                fdLabel.Visible = true;
+                fdNumShow.Visible = true;
+                fdMinus.Visible = true;
+                fdPlus.Visible = true;
+                fdNum = 0;
+                fdNumShow.Text = fdNum.ToString();
+            }
+            else if (fen_dui.SelectedItem.ToString() == "高规格分队")
+            {
+                fdLabel.Text = "五星数量";
+                fdLabel.Visible = true;
+                fdNumShow.Visible = true;
+                fdMinus.Visible = true;
+                fdPlus.Visible = true;
+                fdNum = 0;
+                fdNumShow.Text = fdNum.ToString();
+            }
+            else if (fen_dui.SelectedItem.ToString() == "堡垒战术分队")
+            {
+                fdLabel.Text = "辅助数量";
+                fdLabel.Visible = true;
+                fdNumShow.Visible = true;
+                fdMinus.Visible = true;
+                fdPlus.Visible = true;
+                fdNum = 0;
+                fdNumShow.Text = fdNum.ToString();
             }
             else
             {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
+                fdLabel.Visible = false;
+                fdNumShow.Visible = false;
+                fdMinus.Visible = false;
+                fdPlus.Visible = false;
+                fdNum = 0;
+                fdNumShow.Text = fdNum.ToString();
             }
         }
 
-        private void texas_CheckedChanged(object sender, EventArgs e)
+        private void fdMinus_Click(object sender, EventArgs e)
         {
-            if (texas.Checked)
+            if (fdNum > 0)
             {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
+                fdNum--;
+                fdNumShow.Text = fdNum.ToString();
             }
         }
 
-        private void yedao_CheckedChanged(object sender, EventArgs e)
+        private void fdPlus_Click(object sender, EventArgs e)
         {
-            if (yedao.Checked)
-            {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
+            fdNum++;
+            fdNumShow.Text = fdNum.ToString();
         }
 
-        private void yanw_CheckedChanged(object sender, EventArgs e)
+        private void xzPointShow_TextChanged(object sender, EventArgs e)
         {
-            if (yanw.Checked)
+            if (xzPointShow.Text == "")
             {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
+                xzPoint = 0;
             }
             else
             {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-        }
-
-        private void jian_CheckedChanged(object sender, EventArgs e)
-        {
-            if (jian.Checked)
-            {
-                rbanPoint += RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV1;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-        }
-
-        private void chuna_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chuna.Checked)
-            {
-                rbanPoint += RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-        }
-
-        private void shu_CheckedChanged(object sender, EventArgs e)
-        {
-            if (shu.Checked)
-            {
-                rbanPoint += RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-        }
-
-        private void zhuod_CheckedChanged(object sender, EventArgs e)
-        {
-            if (zhuod.Checked)
-            {
-                rbanPoint += RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-        }
-
-        private void ela_CheckedChanged(object sender, EventArgs e)
-        {
-            if (ela.Checked)
-            {
-                rbanPoint += RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
-            }
-            else
-            {
-                rbanPoint -= RBAN_LV2;
-                rbanPointShow.Text = rbanPoint.ToString();
+                xzPoint = int.Parse(xzPointShow.Text);
             }
         }
 
         public int calculate()
         {
             double tot;
-            tot = Math.Ceiling(times * (jsPoint + jinJiPoint + teShuPoint + f3YiGe + ycPoint + jjPoint + cpbzPoint + lzPoint + rbanPoint));
+            tot = Math.Ceiling(1.0 * (jsPoint + jinJiPoint + teShuPoint + f3YiGe + ycPoint + jjPoint + lzPoint + xzPoint));
+          //  if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
+          //  {
+          //      tot += fdNum * GX;
+          //  }
+          //  else if (fen_dui.SelectedItem.ToString() == "矛头分队")
+          //  {
+          //      tot += fdNum * MT;
+          //  }
+          //  else if (fen_dui.SelectedItem.ToString() == "高规格分队")
+          //  {
+          //      tot += fdNum * GGG;
+          //  }
             return (int)tot;
         }
         private void act_Click(object sender, EventArgs e)
         {
-            if (times > 0)
+            if (fen_dui.SelectedItem == null)
+            {
+                DialogResult tmp = System.Windows.Forms.MessageBox.Show(
+               "请选择分队！",
+               "未选择分队", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
             {
                 total = calculate();
                 totalShow.Text = total.ToString();
+                DialogResult Warning = System.Windows.Forms.MessageBox.Show(
+                    "下面计数器只用作辅助记忆，请稍后将其记录。来自分队的增益分需全队打完后结算！\n无特殊情况不需要填修正分！",
+                    "注意", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 if (total >= 3500)
                 {
                     totalShow.Text += "!";
                 }
                 totalShow.Visible = true;
-            }
-            else
-            {
-                DialogResult Warning = System.Windows.Forms.MessageBox.Show("请选择难度！",
-                                 "未选择难度", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void n12_CheckedChanged(object sender, EventArgs e)
-        {
-            if (n12.Checked)
-            {
-                n15.Checked = false;
-                times = TIMES_12;
-            }
-            else
-            {
-                times = 0;
-            }
-        }
-
-        private void n15_CheckedChanged(object sender, EventArgs e)
-        {
-            if (n15.Checked)
-            {
-                n12.Checked = false;
-                times = TIMES_15;
-            }
-            else
-            {
-                times = 0;
             }
         }
 
@@ -1124,6 +1108,21 @@ namespace 大荒狩计分
         {
             Application.Restart();
             Process.GetCurrentProcess()?.Kill();
+        }
+
+        private void dqyp_knnd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gsjg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yxwmJs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
