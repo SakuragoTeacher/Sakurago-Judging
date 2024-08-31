@@ -99,9 +99,8 @@ namespace 大荒狩计分
 
         public int xzPoint = 0;
 
-        public int rbanPoint = 0;
-
-        public double times = 0;
+        public int yeQ = 0;
+        public int yeH = 0;
 
         public int jsPoint = 0;
 
@@ -695,7 +694,11 @@ namespace 大荒狩计分
             }
             else
             {
-                cpNum = int.Parse(cpNumShow.Text);
+                try
+                {
+                    cpNum = int.Parse(cpNumShow.Text);
+                }
+                catch { }
             }
         }
 
@@ -707,7 +710,11 @@ namespace 大荒狩计分
             }
             else
             {
-                sxNum = int.Parse(sxNumShow.Text);
+                try
+                {
+                    sxNum = int.Parse(sxNumShow.Text);
+                }
+                catch { }
             }
         }
 
@@ -962,58 +969,89 @@ namespace 大荒狩计分
 
         private void fen_dui_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
+            if (fen_dui.SelectedItem != null)
             {
-                fdLabel.Text = "构思数量";
-                fdLabel.Visible = true;
-                fdNumShow.Visible = true;
-                fdMinus.Visible = true;
-                fdPlus.Visible = true;
-                fdNum = 0;
-                fdNumShow.Text = fdNum.ToString();
-            }
-            else if (fen_dui.SelectedItem.ToString() == "矛头分队" || fen_dui.SelectedItem.ToString() == "蓝图测绘分队")
-            {
-                fdLabel.Text = "关卡数量";
-                fdLabel.Visible = true;
-                fdNumShow.Visible = true;
-                fdMinus.Visible = true;
-                fdPlus.Visible = true;
-                fdNum = 0;
-                fdNumShow.Text = fdNum.ToString();
-            }
-            else if (fen_dui.SelectedItem.ToString() == "高规格分队")
-            {
-                fdLabel.Text = "五星数量";
-                fdLabel.Visible = true;
-                fdNumShow.Visible = true;
-                fdMinus.Visible = true;
-                fdPlus.Visible = true;
-                fdNum = 0;
-                fdNumShow.Text = fdNum.ToString();
-            }
-            else if (fen_dui.SelectedItem.ToString() == "堡垒战术分队")
-            {
-                fdLabel.Text = "辅助数量";
-                fdLabel.Visible = true;
-                fdNumShow.Visible = true;
-                fdMinus.Visible = true;
-                fdPlus.Visible = true;
-                fdNum = 0;
-                fdNumShow.Text = fdNum.ToString();
-            }
-            else
-            {
-                fdLabel.Visible = false;
-                fdNumShow.Visible = false;
-                fdMinus.Visible = false;
-                fdPlus.Visible = false;
-                fdNum = 0;
-                fdNumShow.Text = fdNum.ToString();
+                if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
+                {
+                    fdLabel.Text = "构思数量";
+                    fdLabel.Visible = true;
+                    fdNumShow.Visible = true;
+                    fdMinus.Visible = true;
+                    fdPlus.Visible = true;
+                    fdNum = 0;
+                    fdNumShow.Text = fdNum.ToString();
+                }
+                else if (fen_dui.SelectedItem.ToString() == "矛头分队" || fen_dui.SelectedItem.ToString() == "蓝图测绘分队")
+                {
+                    fdLabel.Text = "关卡数量";
+                    fdLabel.Visible = true;
+                    fdNumShow.Visible = true;
+                    fdMinus.Visible = true;
+                    fdPlus.Visible = true;
+                    fdNum = 0;
+                    fdNumShow.Text = fdNum.ToString();
+                }
+                else if (fen_dui.SelectedItem.ToString() == "高规格分队")
+                {
+                    fdLabel.Text = "五星数量";
+                    fdLabel.Visible = true;
+                    fdNumShow.Visible = true;
+                    fdMinus.Visible = true;
+                    fdPlus.Visible = true;
+                    fdNum = 0;
+                    fdNumShow.Text = fdNum.ToString();
+                }
+                else if (fen_dui.SelectedItem.ToString() == "堡垒战术分队")
+                {
+                    fdLabel.Text = "辅助数量";
+                    fdLabel.Visible = true;
+                    fdNumShow.Visible = true;
+                    fdMinus.Visible = true;
+                    fdPlus.Visible = true;
+                    fdNum = 0;
+                    fdNumShow.Text = fdNum.ToString();
+                }
+                else
+                {
+                    fdLabel.Visible = false;
+                    fdNumShow.Visible = false;
+                    fdMinus.Visible = false;
+                    fdPlus.Visible = false;
+                    fdNum = 0;
+                    fdNumShow.Text = fdNum.ToString();
+                }
             }
         }
 
         private void fdMinus_Click(object sender, EventArgs e)
+        {
+            if (fdNum > 0)
+            {
+                fdNum--;
+                fdNumShow.Text = fdNum.ToString();
+            }
+        }
+
+        private void fdMinus_MouseDown(object sender, MouseEventArgs e)
+        {
+            timer1.Interval = 1000;
+            timer1.Enabled = true;
+        }
+
+        private void fdMinus_MouseUp(object sender, MouseEventArgs e)
+        {
+            timer1.Enabled = false;
+            timer2.Enabled = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer2.Interval = 50;
+            timer2.Enabled = true;
+            timer1.Enabled = false;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
         {
             if (fdNum > 0)
             {
@@ -1028,6 +1066,31 @@ namespace 大荒狩计分
             fdNumShow.Text = fdNum.ToString();
         }
 
+        private void fdPlus_MouseDown(object sender, MouseEventArgs e)
+        {
+            timer3.Interval = 1000;
+            timer3.Enabled = true;
+        }
+
+        private void fdPlus_MouseUp(object sender, MouseEventArgs e)
+        {
+            timer3.Enabled = false;
+            timer4.Enabled = false;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer4.Interval = 50;
+            timer4.Enabled = true;
+            timer3.Enabled = false;
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            fdNum++;
+            fdNumShow.Text = fdNum.ToString();
+        }
+
         private void xzPointShow_TextChanged(object sender, EventArgs e)
         {
             if (xzPointShow.Text == "")
@@ -1036,26 +1099,64 @@ namespace 大荒狩计分
             }
             else
             {
-                xzPoint = int.Parse(xzPointShow.Text);
+                try
+                {
+                    xzPoint = int.Parse(xzPointShow.Text);
+                }
+                catch { }
             }
+        }
+
+        private void ye_qian_TextChanged(object sender, EventArgs e)
+        {
+            if (ye_qian.Text == "")
+            {
+                yeQ = 0;
+            }
+            else
+            {
+                try
+                {
+                    yeQ = int.Parse(ye_qian.Text);
+                }
+                catch { }
+            }
+            qq_sum.Text = (yeQ - yeH).ToString();
+        }
+
+        private void ye_hou_TextChanged(object sender, EventArgs e)
+        {
+            if (ye_hou.Text == "")
+            {
+                yeH = 0;
+            }
+            else
+            {
+                try
+                {
+                    yeH = int.Parse(ye_hou.Text);
+                }
+                catch { }
+            }
+            qq_sum.Text = (yeQ - yeH).ToString();
         }
 
         public int calculate()
         {
             double tot;
             tot = Math.Ceiling(1.0 * (jsPoint + jinJiPoint + teShuPoint + f3YiGe + ycPoint + jjPoint + lzPoint + xzPoint));
-          //  if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
-          //  {
-          //      tot += fdNum * GX;
-          //  }
-          //  else if (fen_dui.SelectedItem.ToString() == "矛头分队")
-          //  {
-          //      tot += fdNum * MT;
-          //  }
-          //  else if (fen_dui.SelectedItem.ToString() == "高规格分队")
-          //  {
-          //      tot += fdNum * GGG;
-          //  }
+            //  if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
+            //  {
+            //      tot += fdNum * GX;
+            //  }
+            //  else if (fen_dui.SelectedItem.ToString() == "矛头分队")
+            //  {
+            //      tot += fdNum * MT;
+            //  }
+            //  else if (fen_dui.SelectedItem.ToString() == "高规格分队")
+            //  {
+            //      tot += fdNum * GGG;
+            //  }
             return (int)tot;
         }
         private void act_Click(object sender, EventArgs e)
@@ -1087,7 +1188,11 @@ namespace 大荒狩计分
             {
                 jsPoint = 0;
             }
-            jsPoint = int.Parse(jsPointShow.Text);
+            try
+            {
+                jsPoint = int.Parse(jsPointShow.Text);
+            }
+            catch { }
         }
 
         private void isF3YiGe_CheckedChanged(object sender, EventArgs e)
@@ -1108,21 +1213,6 @@ namespace 大荒狩计分
         {
             Application.Restart();
             Process.GetCurrentProcess()?.Kill();
-        }
-
-        private void dqyp_knnd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gsjg_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void yxwmJs_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
