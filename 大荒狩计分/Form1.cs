@@ -12,18 +12,28 @@ namespace 大荒狩计分
         public const int LZ_5 = 10;
         public const int LZ_4 = 5;
         public const int KLMD_VALUE = 10;
+        public const int ND_KLMD_VALUE = 20;
         public const int DQYP_KNND_VALUE = 10;
         public const int XHYD_VALUE = 20;
+        public const int MW_XHYD_VALUE = 30;
         public const int JXDC_MWND_VALUE = 20;
         public const int XBKC_TZND_VALUE = 20;
         public const int JRCCX_VALUE = 25;
         public const int TDFS_VALUE = 25;
+        public const int ND_TDFS_VALUE = 35;
         public const int JHGZ_VALUE = 25;
+        public const int ND_JHGZ_VALUE = 40;
         public const int SSDKQ_VALUE = 40;
+        public const int ND_SSDKQ_VALUE = 60;
         public const int MQGS_VALUE = 40;
+        public const int ND_MQGS_VALUE = 60;
+        public const int _4_XY_5_VALUE = 10;
+        public const int JRND_VALUE = 5;
+        public const int TZ_NDDC_VALUE = 20;
         public const int F3YIGE_VALUE = 20;
         public const int SBDSD_VALUE = 30;
         public const int XHD_VALUE = 30;
+        public const int JXJS_VALUE = 35;
         public const int WJDBF_VALUE = 40;
         public const int ZCCM_VALUE = 40;
         public const int TS_JJ = 10;
@@ -38,6 +48,8 @@ namespace 大荒狩计分
         public const int JJ23_LIANDA = 50;
         public const int JJ_ND = 20;
         public const int JJ_HL = 20;
+        public const int JJ_DD_ND = 30;
+        public const int JJ_DD_HL = 30;
         public const int YINCANG = 5;
         public const int GX = 1;
         public const int MT = 10;
@@ -49,17 +61,26 @@ namespace 大荒狩计分
 
         public int jinJiPoint = 0;
         public int bhyyNum = 0;
+        public int ndKlmdNum = 0;
         public int tstNum = 0;
         public int gsjgNum = 0;
+        public int mwXhydNum = 0;
         public int srwjNum = 0;
         public int hcwshNum = 0;
         public int ylzzNum = 0;
         public int bnwrNum = 0;
+        public int ndTdfsNum = 0;
         public int wzxjNum = 0;
+        public int ndJhgzNum = 0;
         public int rzwNum = 0;
+        public int ndSsdkqNum = 0;
         public int sysNum = 0;
+        public int ndMqgsNum = 0;
         public int slNum = 0;
         public int lwwlNum = 0;
+        public int _4xy5Num = 0;
+        public int jrndNum = 0;
+        public int tzNddcNum = 0;
 
         public int f3YiGe = 0;
 
@@ -129,6 +150,25 @@ namespace 大荒狩计分
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
+        private void ndKlmdMinus_Click(object sender, EventArgs e)
+        {
+            if (ndKlmdNum > 0)
+            {
+                ndKlmdNum--;
+                ndKlmdNumShow.Text = ndKlmdNum.ToString();
+                jinJiPoint -= ND_KLMD_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void ndKlmdPlus_Click(object sender, EventArgs e)
+        {
+            ndKlmdNum++;
+            ndKlmdNumShow.Text = ndKlmdNum.ToString();
+            jinJiPoint += ND_KLMD_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
         private void tstMinus_Click(object sender, EventArgs e)
         {
             if (tstNum > 0)
@@ -164,6 +204,25 @@ namespace 大荒狩计分
             gsjgNum++;
             gsjgNumShow.Text = gsjgNum.ToString();
             jinJiPoint += XHYD_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void mwXhydMinus_Click(object sender, EventArgs e)
+        {
+            if (mwXhydNum > 0)
+            {
+                mwXhydNum--;
+                mwXhydNumShow.Text = mwXhydNum.ToString();
+                jinJiPoint -= MW_XHYD_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void mwXhydPlus_Click(object sender, EventArgs e)
+        {
+            mwXhydNum++;
+            mwXhydNumShow.Text = mwXhydNum.ToString();
+            jinJiPoint += MW_XHYD_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -243,6 +302,25 @@ namespace 大荒狩计分
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
+        private void ndTdfsMinus_Click(object sender, EventArgs e)
+        {
+            if (ndTdfsNum > 0)
+            {
+                ndTdfsNum--;
+                ndTdfsNumShow.Text = ndTdfsNum.ToString();
+                jinJiPoint -= ND_TDFS_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void ndTdfsPlus_Click(object sender, EventArgs e)
+        {
+            ndTdfsNum++;
+            ndTdfsNumShow.Text = ndTdfsNum.ToString();
+            jinJiPoint += ND_TDFS_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
         private void wzxjMinus_Click(object sender, EventArgs e)
         {
             if (wzxjNum > 0)
@@ -259,6 +337,25 @@ namespace 大荒狩计分
             wzxjNum++;
             wzxjNumShow.Text = wzxjNum.ToString();
             jinJiPoint += JHGZ_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void ndJhgzMinus_Click(object sender, EventArgs e)
+        {
+            if (ndJhgzNum > 0)
+            {
+                ndJhgzNum--;
+                ndJhgzNumShow.Text = ndJhgzNum.ToString();
+                jinJiPoint -= ND_JHGZ_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void ndJhgzPlus_Click(object sender, EventArgs e)
+        {
+            ndJhgzNum++;
+            ndJhgzNumShow.Text = ndJhgzNum.ToString();
+            jinJiPoint += ND_JHGZ_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -281,6 +378,25 @@ namespace 大荒狩计分
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
+        private void ndSsdkqMinus_Click(object sender, EventArgs e)
+        {
+            if (ndSsdkqNum > 0)
+            {
+                ndSsdkqNum--;
+                ndSsdkqNumShow.Text = ndSsdkqNum.ToString();
+                jinJiPoint -= ND_SSDKQ_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void ndSsdkqPlus_Click(object sender, EventArgs e)
+        {
+            ndSsdkqNum++;
+            ndSsdkqNumShow.Text = ndSsdkqNum.ToString();
+            jinJiPoint += ND_SSDKQ_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
         private void sysMinus_Click(object sender, EventArgs e)
         {
             if (sysNum > 0)
@@ -297,6 +413,82 @@ namespace 大荒狩计分
             sysNum++;
             sysNumShow.Text = sysNum.ToString();
             jinJiPoint += MQGS_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void ndMqgsMinus_Click(object sender, EventArgs e)
+        {
+            if (ndMqgsNum > 0)
+            {
+                ndMqgsNum--;
+                ndMqgsNumShow.Text = ndMqgsNum.ToString();
+                jinJiPoint -= ND_MQGS_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void ndMqgsPlus_Click(object sender, EventArgs e)
+        {
+            ndMqgsNum++;
+            ndMqgsNumShow.Text = ndMqgsNum.ToString();
+            jinJiPoint += ND_MQGS_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void _4xy5Minus_Click(object sender, EventArgs e)
+        {
+            if (_4xy5Num > 0)
+            {
+                _4xy5Num--;
+                _4xy5NumShow.Text = _4xy5Num.ToString();
+                jinJiPoint -= _4_XY_5_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void _4xy5Plus_Click(object sender, EventArgs e)
+        {
+            _4xy5Num++;
+            _4xy5NumShow.Text = _4xy5Num.ToString();
+            jinJiPoint += _4_XY_5_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void jrndMinus_Click(object sender, EventArgs e)
+        {
+            if (jrndNum > 0)
+            {
+                jrndNum--;
+                jrndNumShow.Text = jrndNum.ToString();
+                jinJiPoint -= JRND_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void jrndPlus_Click(object sender, EventArgs e)
+        {
+            jrndNum++;
+            jrndNumShow.Text = jrndNum.ToString();
+            jinJiPoint += JRND_VALUE;
+            jinJiPointShow.Text = jinJiPoint.ToString();
+        }
+
+        private void tzNddcMinus_Click(object sender, EventArgs e)
+        {
+            if (tzNddcNum > 0)
+            {
+                tzNddcNum--;
+                tzNddcNumShow.Text = tzNddcNum.ToString();
+                jinJiPoint -= TZ_NDDC_VALUE;
+                jinJiPointShow.Text = jinJiPoint.ToString();
+            }
+        }
+
+        private void tzNddcPlus_Click(object sender, EventArgs e)
+        {
+            tzNddcNum++;
+            tzNddcNumShow.Text = tzNddcNum.ToString();
+            jinJiPoint += TZ_NDDC_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
 
@@ -356,6 +548,37 @@ namespace 大荒狩计分
                 teShuPointShow.Text = teShuPoint.ToString();
             }
             else if (!xhd_jj.Checked)
+            {
+                teShuPoint -= TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void jxjs_CheckedChanged(object sender, EventArgs e)
+        {
+            if (jxjs.Checked)
+            {
+                teShuPoint += JXJS_VALUE;
+                jxjs_jj.Enabled = true;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!jxjs.Checked)
+            {
+                teShuPoint -= JXJS_VALUE;
+                jxjs_jj.Checked = false;
+                jxjs_jj.Enabled = false;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+        }
+
+        private void jxjs_jj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (jxjs_jj.Checked)
+            {
+                teShuPoint += TS_JJ;
+                teShuPointShow.Text = teShuPoint.ToString();
+            }
+            else if (!jxjs_jj.Checked)
             {
                 teShuPoint -= TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
@@ -921,7 +1144,7 @@ namespace 大荒狩计分
         {
             if (sc_nd.Checked)
             {
-                scNdPoint = JJ_ND;
+                scNdPoint = JJ_DD_ND;
             }
             else if (!sc_nd.Checked)
             {
@@ -946,7 +1169,7 @@ namespace 大荒狩计分
         {
             if (sc_hl.Checked)
             {
-                scHlPoint = JJ_HL;
+                scHlPoint = JJ_DD_HL;
             }
             else if (!sc_hl.Checked)
             {
