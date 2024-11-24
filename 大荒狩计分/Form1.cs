@@ -12,44 +12,46 @@ namespace 大荒狩计分
         public const int LZ_5 = 10;
         public const int LZ_4 = 5;
         public const int KLMD_VALUE = 10;
-        public const int ND_KLMD_VALUE = 20;
+        public const int ND_KLMD_VALUE = 15;
         public const int DQYP_KNND_VALUE = 10;
-        public const int XHYD_VALUE = 20;
+        public const int XHYD_VALUE = 15;
         public const int MW_XHYD_VALUE = 30;
-        public const int JXDC_MWND_VALUE = 20;
-        public const int XBKC_TZND_VALUE = 20;
-        public const int JRCCX_VALUE = 25;
-        public const int TDFS_VALUE = 25;
+        public const int JXDC_MWND_VALUE = 15;
+        public const int XBKC_TZND_VALUE = 25;
+        public const int JRCCX_VALUE = 35;
+        public const int TDFS_VALUE = 60;
         public const int ND_TDFS_VALUE = 35;
         public const int JHGZ_VALUE = 25;
-        public const int ND_JHGZ_VALUE = 40;
-        public const int SSDKQ_VALUE = 40;
-        public const int ND_SSDKQ_VALUE = 60;
-        public const int MQGS_VALUE = 40;
-        public const int ND_MQGS_VALUE = 60;
+        public const int ND_JHGZ_VALUE = 45;
+        public const int SSDKQ_VALUE = 35;
+        public const int ND_SSDKQ_VALUE = 35;
+        public const int MQGS_VALUE = 25;
+        public const int ND_MQGS_VALUE = 45;
         public const int _4_XY_5_VALUE = 10;
         public const int JRND_VALUE = 5;
-        public const int TZ_NDDC_VALUE = 20;
+        public const int TZ_NDDC_VALUE = 15;
         public const int F3YIGE_VALUE = 20;
-        public const int SBDSD_VALUE = 30;
-        public const int XHD_VALUE = 30;
-        public const int JXJS_VALUE = 35;
-        public const int WJDBF_VALUE = 40;
-        public const int ZCCM_VALUE = 40;
+        public const int SBDSD_VALUE = 15;
+        public const int XHD_VALUE = 20;
+        public const int JXJS_VALUE = 20;
+        public const int WJDBF_VALUE = 30;
+        public const int ZCCM_VALUE = 20;
         public const int TS_JJ = 10;
         public const int YSGL_VALUE = 0;
-        public int[] YSGL_JS = { 0, 15, 25, 45 };
+        public int[] YSGL_JS = { 0, 15, 25, 45, 55 };
         public int[] YSGL_JJ_JS = { 0, 25, 35, 45, 60 };
-        public const int YSGL_JS3_WL = 50;
+        public const int YSGL_JS3_WL = 60;
         public const int YSGL_JJ_JS4_WL = 70;
         public const int JJSK_VALUE = 10;
-        public const int CY_VALUE = 60;
-        public const int SC_VALUE = 100;
-        public const int JJ23_LIANDA = 50;
-        public const int JJ_ND = 20;
-        public const int JJ_HL = 20;
-        public const int JJ_DD_ND = 30;
-        public const int JJ_DD_HL = 30;
+        public const int CY_VALUE = 100;
+        public const int SC_VALUE = 250;
+        public const int JJ14_LIANDA = 50;
+        public const int JJ24_LIANDA = 150;
+        public const int JJSK_YG = 50;
+        public const int JJ_ND = 40;
+        public const int JJ_HL = 40;
+        public const int JJ_DD_ND = 50;
+        public const int JJ_DD_HL = 60;
         public const int YINCANG = 5;
         public const int GX = 1;
         public const int MT = 10;
@@ -101,6 +103,7 @@ namespace 大荒狩计分
         public int jjPoint = 0;
         public int jjskPointTot = 0;
         public int jjskPoint = 0;
+        public int jjskYgPoint = 0;
         public int jjskNdPoint = 0;
         public int jjskHlPoint = 0;
         public int cyPointTot = 0;
@@ -124,6 +127,11 @@ namespace 大荒狩计分
         public int yeH = 0;
 
         public int jsPoint = 0;
+
+        public int pbPoint = 0;
+        public int ansjmPoint = 0;
+        public double xzcjMult = 1;
+        public double gdxzMult = 1;
 
         public int total = 0;
         public dhsForm()
@@ -212,7 +220,7 @@ namespace 大荒狩计分
             if (mwXhydNum > 0)
             {
                 mwXhydNum--;
-                mwXhydNumShow.Text = mwXhydNum.ToString();
+                //mwXhydNumShow.Text = mwXhydNum.ToString();
                 jinJiPoint -= MW_XHYD_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
@@ -221,7 +229,7 @@ namespace 大荒狩计分
         private void mwXhydPlus_Click(object sender, EventArgs e)
         {
             mwXhydNum++;
-            mwXhydNumShow.Text = mwXhydNum.ToString();
+            //mwXhydNumShow.Text = mwXhydNum.ToString();
             jinJiPoint += MW_XHYD_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
@@ -307,7 +315,7 @@ namespace 大荒狩计分
             if (ndTdfsNum > 0)
             {
                 ndTdfsNum--;
-                ndTdfsNumShow.Text = ndTdfsNum.ToString();
+                //ndTdfsNumShow.Text = ndTdfsNum.ToString();
                 jinJiPoint -= ND_TDFS_VALUE;
                 jinJiPointShow.Text = jinJiPoint.ToString();
             }
@@ -316,7 +324,7 @@ namespace 大荒狩计分
         private void ndTdfsPlus_Click(object sender, EventArgs e)
         {
             ndTdfsNum++;
-            ndTdfsNumShow.Text = ndTdfsNum.ToString();
+            //ndTdfsNumShow.Text = ndTdfsNum.ToString();
             jinJiPoint += ND_TDFS_VALUE;
             jinJiPointShow.Text = jinJiPoint.ToString();
         }
@@ -497,26 +505,26 @@ namespace 大荒狩计分
             if (sbdsd.Checked)
             {
                 teShuPoint += SBDSD_VALUE;
-                sbdsd_jj.Enabled = true;
+                //sbdsd_jj.Enabled = true;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
             else if (!sbdsd.Checked)
             {
                 teShuPoint -= SBDSD_VALUE;
-                sbdsd_jj.Checked = false;
-                sbdsd_jj.Enabled = false;
+                //sbdsd_jj.Checked = false;
+                //sbdsd_jj.Enabled = false;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
         }
 
         private void sbdsd_jj_CheckedChanged(object sender, EventArgs e)
         {
-            if (sbdsd_jj.Checked)
+            if (false)
             {
                 teShuPoint += TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
-            else if (!sbdsd_jj.Checked)
+            else if (!false)
             {
                 teShuPoint -= TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
@@ -559,26 +567,26 @@ namespace 大荒狩计分
             if (jxjs.Checked)
             {
                 teShuPoint += JXJS_VALUE;
-                jxjs_jj.Enabled = true;
+                //jxjs_jj.Enabled = true;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
             else if (!jxjs.Checked)
             {
                 teShuPoint -= JXJS_VALUE;
-                jxjs_jj.Checked = false;
-                jxjs_jj.Enabled = false;
+                //jxjs_jj.Checked = false;
+                //jxjs_jj.Enabled = false;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
         }
 
         private void jxjs_jj_CheckedChanged(object sender, EventArgs e)
         {
-            if (jxjs_jj.Checked)
+            if (false)
             {
                 teShuPoint += TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
             }
-            else if (!jxjs_jj.Checked)
+            else if (!false)
             {
                 teShuPoint -= TS_JJ;
                 teShuPointShow.Text = teShuPoint.ToString();
@@ -656,8 +664,8 @@ namespace 大荒狩计分
                 yxwmPoint = YSGL_VALUE;
                 teShuPoint += YSGL_VALUE;
                 teShuPointShow.Text = teShuPoint.ToString();
-                ysgl_jj.Enabled = true;
-                yxwmJs.Enabled = true;
+                //ysgl_jj.Enabled = true;
+                //yxwmJs.Enabled = true;
                 yxwmMinus.Enabled = true;
                 yxwmNumShow.Enabled = true;
                 yxwmPlus.Enabled = true;
@@ -670,8 +678,8 @@ namespace 大荒狩计分
                 teShuPointShow.Text = teShuPoint.ToString();
                 yxwmNumShow.Text = yxwmNum.ToString();
                 yxwmPoint = 0;
-                ysgl_jj.Checked = false;
-                ysgl_jj.Enabled = false;
+                //ysgl_jj.Checked = false;
+                //ysgl_jj.Enabled = false;
                 yxwmJs.Enabled = false;
                 yxwmMinus.Enabled = false;
                 yxwmNumShow.Enabled = false;
@@ -685,14 +693,14 @@ namespace 大荒狩计分
 
         private void ysgl_jj_CheckedChanged(object sender, EventArgs e)
         {
-            if (ysgl_jj.Checked)
+            if (false)
             {
                 teShuPoint -= yxwmPoint;
                 yxwmPoint = YSGL_VALUE + YSGL_JJ_JS[yxwmNum];
                 teShuPoint += yxwmPoint;
                 ysgl_wl.Checked = false;
             }
-            else if (!ysgl_jj.Checked)
+            else if (!false)
             {
                 if (yxwmNum > 3)
                 {
@@ -709,7 +717,7 @@ namespace 大荒狩计分
 
         private void yxwmMinus_Click(object sender, EventArgs e)
         {
-            if (!ysgl_jj.Checked)
+            if (!false)
             {
                 if (yxwmNum > 0)
                 {
@@ -722,7 +730,7 @@ namespace 大荒狩计分
                     ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
                 }
             }
-            else if (ysgl_jj.Checked)
+            else if (false)
             {
                 if (yxwmNum > 0)
                 {
@@ -739,9 +747,9 @@ namespace 大荒狩计分
 
         private void yxwmPlus_Click(object sender, EventArgs e)
         {
-            if (!ysgl_jj.Checked)
+            if (!false)
             {
-                if (yxwmNum < 3)
+                if (yxwmNum < 4)
                 {
                     yxwmNum++;
                     yxwmNumShow.Text = yxwmNum.ToString();
@@ -752,7 +760,7 @@ namespace 大荒狩计分
                     ysgl.Text = "鸭速公路" + "(" + yxwmPoint.ToString() + ")";
                 }
             }
-            else if (ysgl_jj.Checked)
+            else if (false)
             {
                 if (yxwmNum < 4)
                 {
@@ -769,7 +777,7 @@ namespace 大荒狩计分
 
         private void ysgl_wl_CheckedChanged(object sender, EventArgs e)
         {
-            if (!ysgl_jj.Checked)
+            if (!false)
             {
                 if (ysgl_wl.Checked)
                 {
@@ -799,7 +807,7 @@ namespace 大荒狩计分
                     }
                 }
             }
-            else if (ysgl_jj.Checked)
+            else if (true)
             {
                 if (ysgl_wl.Checked)
                 {
@@ -946,6 +954,7 @@ namespace 大荒狩计分
             if (jjsk.Checked)
             {
                 jjskPoint = JJSK_VALUE;
+                jjsk_yg.Enabled = true;
                 jjsk_nd.Enabled = true;
                 jjsk_hl.Enabled = true;
                 cy.Checked = false;
@@ -954,6 +963,8 @@ namespace 大荒狩计分
             else if (!jjsk.Checked)
             {
                 jjskPoint = 0;
+                jjsk_yg.Checked = false;
+                jjsk_yg.Enabled = false;
                 jjsk_nd.Checked = false;
                 jjsk_nd.Enabled = false;
                 jjsk_hl.Checked = false;
@@ -962,13 +973,46 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
+            }
+            else
+            {
+                jjskPoint = 0;
             }
             jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
+            scPointTot = scPoint + scNdPoint + scHlPoint;
+            jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
+            jjPointShow.Text = jjPoint.ToString();
+        }
+
+        private void jjsk_yg_CheckedChanged(object sender, EventArgs e)
+        {
+            if (jjsk_yg.Checked)
+            {
+                jjskYgPoint = JJSK_YG;
+            }
+            else if (!jjsk_yg.Checked)
+            {
+                jjskYgPoint = 0;
+            }
+            if (cy.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ24_LIANDA;
+            }
+            else if (jjsk.Checked && sc.Checked)
+            {
+                lianDaPoint = JJ14_LIANDA;
+            }
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -987,13 +1031,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1012,13 +1060,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1046,13 +1098,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1071,13 +1127,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1096,13 +1156,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1127,13 +1191,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1152,13 +1220,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1177,13 +1249,17 @@ namespace 大荒狩计分
             }
             if (cy.Checked && sc.Checked)
             {
-                lianDaPoint = JJ23_LIANDA;
+                lianDaPoint = JJ24_LIANDA;
             }
-            else if (!cy.Checked && sc.Checked)
+            else if (jjsk.Checked && sc.Checked)
             {
-                lianDaPoint = 0;
+                lianDaPoint = JJ14_LIANDA;
             }
-            jjskPointTot = jjskPoint + jjskNdPoint + jjskHlPoint;
+            else
+            {
+                jjskPoint = 0;
+            }
+            jjskPointTot = jjskPoint + jjskYgPoint + jjskNdPoint + jjskHlPoint;
             cyPointTot = cyPoint + cyNdPoint + cyHlPoint;
             scPointTot = scPoint + scNdPoint + scHlPoint;
             jjPoint = jjskPointTot + cyPointTot + scPointTot + lianDaPoint;
@@ -1367,7 +1443,7 @@ namespace 大荒狩计分
         public int calculate()
         {
             double tot;
-            tot = Math.Ceiling(1.0 * (jsPoint + jinJiPoint + teShuPoint + f3YiGe + ycPoint + jjPoint + lzPoint + xzPoint));
+            tot = Math.Ceiling(1.0 * xzcjMult * gdxzMult * (jsPoint + jinJiPoint + teShuPoint + f3YiGe + ycPoint + jjPoint + lzPoint + xzPoint + pbPoint + ansjmPoint));
             //  if (fen_dui.SelectedItem.ToString() == "魂灵护送分队" || fen_dui.SelectedItem.ToString() == "博闻广记分队")
             //  {
             //      tot += fdNum * GX;
@@ -1436,6 +1512,64 @@ namespace 大荒狩计分
         {
             Application.Restart();
             Process.GetCurrentProcess()?.Kill();
+        }
+
+        private void dhsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tdfs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!pb.Checked)
+            {
+                pbPoint = 0;
+            }
+            else if (pb.Checked)
+            {
+                pbPoint = 30;
+            }
+        }
+
+        private void xzcj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!xzcj.Checked)
+            {
+                xzcjMult = 1;
+            }
+            else if (xzcj.Checked)
+            {
+                xzcjMult = 0.6;
+            }
+        }
+
+        private void ansjm_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ansjm.Checked)
+            {
+                ansjmPoint = 0;
+            }
+            else if (ansjm.Checked)
+            {
+                ansjmPoint = 60;
+            }
+        }
+
+        private void gdxz_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!gdxz.Checked)
+            {
+                gdxzMult = 1;
+            }
+            else if (gdxz.Checked)
+            {
+                gdxzMult = 1.1;
+            }
         }
     }
 }

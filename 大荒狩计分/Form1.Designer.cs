@@ -122,11 +122,9 @@
             xhd = new CheckBox();
             wjdbf = new CheckBox();
             zccm = new CheckBox();
-            sbdsd_jj = new CheckBox();
             xhd_jj = new CheckBox();
             wjdbf_jj = new CheckBox();
             zccm_jj = new CheckBox();
-            ysgl_jj = new CheckBox();
             ysgl_wl = new CheckBox();
             jjsk = new CheckBox();
             cy = new CheckBox();
@@ -174,18 +172,10 @@
             ndKlmdPlus = new Button();
             ndKlmdMinus = new Button();
             ndKlmd = new Label();
-            mwXhydNumShow = new Label();
-            mwXhydPlus = new Button();
-            mwXhydMinus = new Button();
-            mwXhyd = new Label();
             ndJhgzNumShow = new Label();
             ndJhgzPlus = new Button();
             ndJhgzMinus = new Button();
             ndJhgz = new Label();
-            ndTdfsNumShow = new Label();
-            ndTdfsPlus = new Button();
-            ndTdfsMinus = new Button();
-            ndTdfs = new Label();
             ndMqgsNumShow = new Label();
             ndMqgsPlus = new Button();
             ndMqgsMinus = new Button();
@@ -194,8 +184,17 @@
             ndSsdkqPlus = new Button();
             ndSsdkqMinus = new Button();
             ndSsdkq = new Label();
-            jxjs_jj = new CheckBox();
             jxjs = new CheckBox();
+            label11 = new Label();
+            label12 = new Label();
+            label14 = new Label();
+            label17 = new Label();
+            jjsk_yg = new CheckBox();
+            pb = new CheckBox();
+            label13 = new Label();
+            xzcj = new CheckBox();
+            ansjm = new CheckBox();
+            gdxz = new CheckBox();
             SuspendLayout();
             // 
             // jinJi
@@ -244,7 +243,7 @@
             // 
             dqyp_knnd.AutoSize = true;
             dqyp_knnd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            dqyp_knnd.Location = new Point(7, 142);
+            dqyp_knnd.Location = new Point(6, 142);
             dqyp_knnd.Name = "dqyp_knnd";
             dqyp_knnd.Size = new Size(152, 24);
             dqyp_knnd.TabIndex = 7;
@@ -262,7 +261,7 @@
             // tstMinus
             // 
             tstMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tstMinus.Location = new Point(183, 141);
+            tstMinus.Location = new Point(182, 141);
             tstMinus.Name = "tstMinus";
             tstMinus.Size = new Size(29, 28);
             tstMinus.TabIndex = 9;
@@ -273,7 +272,7 @@
             // tstNumShow
             // 
             tstNumShow.AutoSize = true;
-            tstNumShow.Location = new Point(218, 145);
+            tstNumShow.Location = new Point(217, 145);
             tstNumShow.Name = "tstNumShow";
             tstNumShow.Size = new Size(18, 20);
             tstNumShow.TabIndex = 10;
@@ -282,7 +281,7 @@
             // tstPlus
             // 
             tstPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tstPlus.Location = new Point(242, 142);
+            tstPlus.Location = new Point(241, 142);
             tstPlus.Name = "tstPlus";
             tstPlus.Size = new Size(29, 28);
             tstPlus.TabIndex = 11;
@@ -294,16 +293,16 @@
             // 
             xhyd.AutoSize = true;
             xhyd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            xhyd.Location = new Point(7, 180);
+            xhyd.Location = new Point(7, 234);
             xhyd.Name = "xhyd";
             xhyd.Size = new Size(116, 24);
             xhyd.TabIndex = 12;
-            xhyd.Text = "猩红甬道(20)";
+            xhyd.Text = "猩红甬道(10)";
             // 
             // gsjgMinus
             // 
             gsjgMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            gsjgMinus.Location = new Point(183, 180);
+            gsjgMinus.Location = new Point(183, 234);
             gsjgMinus.Name = "gsjgMinus";
             gsjgMinus.Size = new Size(29, 28);
             gsjgMinus.TabIndex = 13;
@@ -314,7 +313,7 @@
             // gsjgPlus
             // 
             gsjgPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            gsjgPlus.Location = new Point(242, 180);
+            gsjgPlus.Location = new Point(242, 234);
             gsjgPlus.Name = "gsjgPlus";
             gsjgPlus.Size = new Size(29, 28);
             gsjgPlus.TabIndex = 14;
@@ -325,7 +324,7 @@
             // gsjgNumShow
             // 
             gsjgNumShow.AutoSize = true;
-            gsjgNumShow.Location = new Point(218, 184);
+            gsjgNumShow.Location = new Point(218, 238);
             gsjgNumShow.Name = "gsjgNumShow";
             gsjgNumShow.Size = new Size(18, 20);
             gsjgNumShow.TabIndex = 15;
@@ -335,16 +334,16 @@
             // 
             jxdc_mwnd.AutoSize = true;
             jxdc_mwnd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jxdc_mwnd.Location = new Point(7, 259);
+            jxdc_mwnd.Location = new Point(6, 273);
             jxdc_mwnd.Name = "jxdc_mwnd";
             jxdc_mwnd.Size = new Size(152, 24);
             jxdc_mwnd.TabIndex = 16;
-            jxdc_mwnd.Text = "年代假想对冲(20)";
+            jxdc_mwnd.Text = "魔王假想对冲(15)";
             // 
             // srwjMinus
             // 
             srwjMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            srwjMinus.Location = new Point(183, 259);
+            srwjMinus.Location = new Point(182, 273);
             srwjMinus.Name = "srwjMinus";
             srwjMinus.Size = new Size(29, 28);
             srwjMinus.TabIndex = 17;
@@ -355,7 +354,7 @@
             // srwjPlus
             // 
             srwjPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            srwjPlus.Location = new Point(242, 259);
+            srwjPlus.Location = new Point(241, 273);
             srwjPlus.Name = "srwjPlus";
             srwjPlus.Size = new Size(29, 28);
             srwjPlus.TabIndex = 18;
@@ -366,7 +365,7 @@
             // srwjNumShow
             // 
             srwjNumShow.AutoSize = true;
-            srwjNumShow.Location = new Point(218, 262);
+            srwjNumShow.Location = new Point(217, 276);
             srwjNumShow.Name = "srwjNumShow";
             srwjNumShow.Size = new Size(18, 20);
             srwjNumShow.TabIndex = 19;
@@ -376,16 +375,16 @@
             // 
             xbkc_tznd.AutoSize = true;
             xbkc_tznd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            xbkc_tznd.Location = new Point(7, 297);
+            xbkc_tznd.Location = new Point(6, 311);
             xbkc_tznd.Name = "xbkc_tznd";
-            xbkc_tznd.Size = new Size(152, 24);
+            xbkc_tznd.Size = new Size(116, 24);
             xbkc_tznd.TabIndex = 20;
-            xbkc_tznd.Text = "天灾朽败考察(20)";
+            xbkc_tznd.Text = "神出鬼没(25)";
             // 
             // hcwshMinus
             // 
             hcwshMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            hcwshMinus.Location = new Point(183, 297);
+            hcwshMinus.Location = new Point(182, 311);
             hcwshMinus.Name = "hcwshMinus";
             hcwshMinus.Size = new Size(29, 28);
             hcwshMinus.TabIndex = 21;
@@ -396,7 +395,7 @@
             // hcwshPlus
             // 
             hcwshPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            hcwshPlus.Location = new Point(242, 297);
+            hcwshPlus.Location = new Point(241, 311);
             hcwshPlus.Name = "hcwshPlus";
             hcwshPlus.Size = new Size(29, 28);
             hcwshPlus.TabIndex = 22;
@@ -407,7 +406,7 @@
             // hcwshNumShow
             // 
             hcwshNumShow.AutoSize = true;
-            hcwshNumShow.Location = new Point(218, 300);
+            hcwshNumShow.Location = new Point(217, 314);
             hcwshNumShow.Name = "hcwshNumShow";
             hcwshNumShow.Size = new Size(18, 20);
             hcwshNumShow.TabIndex = 23;
@@ -417,16 +416,16 @@
             // 
             jrccx.AutoSize = true;
             jrccx.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jrccx.Location = new Point(7, 336);
+            jrccx.Location = new Point(6, 349);
             jrccx.Name = "jrccx";
-            jrccx.Size = new Size(134, 24);
+            jrccx.Size = new Size(152, 24);
             jrccx.TabIndex = 24;
-            jrccx.Text = "寄人城池下(25)";
+            jrccx.Text = "魔王神出鬼没(35)";
             // 
             // ylzzMinus
             // 
             ylzzMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ylzzMinus.Location = new Point(183, 336);
+            ylzzMinus.Location = new Point(182, 349);
             ylzzMinus.Name = "ylzzMinus";
             ylzzMinus.Size = new Size(29, 28);
             ylzzMinus.TabIndex = 25;
@@ -437,7 +436,7 @@
             // ylzzPlus
             // 
             ylzzPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ylzzPlus.Location = new Point(242, 336);
+            ylzzPlus.Location = new Point(241, 349);
             ylzzPlus.Name = "ylzzPlus";
             ylzzPlus.Size = new Size(29, 28);
             ylzzPlus.TabIndex = 26;
@@ -448,7 +447,7 @@
             // ylzzNumShow
             // 
             ylzzNumShow.AutoSize = true;
-            ylzzNumShow.Location = new Point(218, 340);
+            ylzzNumShow.Location = new Point(217, 353);
             ylzzNumShow.Name = "ylzzNumShow";
             ylzzNumShow.Size = new Size(18, 20);
             ylzzNumShow.TabIndex = 27;
@@ -458,16 +457,17 @@
             // 
             tdfs.AutoSize = true;
             tdfs.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tdfs.Location = new Point(7, 370);
+            tdfs.Location = new Point(7, 471);
             tdfs.Name = "tdfs";
-            tdfs.Size = new Size(116, 24);
+            tdfs.Size = new Size(134, 24);
             tdfs.TabIndex = 28;
-            tdfs.Text = "通道封锁(25)";
+            tdfs.Text = "双碎骨建制(60)";
+            tdfs.Click += tdfs_Click;
             // 
             // bnwrMinus
             // 
             bnwrMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            bnwrMinus.Location = new Point(183, 370);
+            bnwrMinus.Location = new Point(183, 471);
             bnwrMinus.Name = "bnwrMinus";
             bnwrMinus.Size = new Size(29, 28);
             bnwrMinus.TabIndex = 29;
@@ -478,7 +478,7 @@
             // bnwrPlus
             // 
             bnwrPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            bnwrPlus.Location = new Point(242, 370);
+            bnwrPlus.Location = new Point(242, 471);
             bnwrPlus.Name = "bnwrPlus";
             bnwrPlus.Size = new Size(29, 28);
             bnwrPlus.TabIndex = 30;
@@ -489,7 +489,7 @@
             // bnwrNumShow
             // 
             bnwrNumShow.AutoSize = true;
-            bnwrNumShow.Location = new Point(218, 373);
+            bnwrNumShow.Location = new Point(218, 474);
             bnwrNumShow.Name = "bnwrNumShow";
             bnwrNumShow.Size = new Size(18, 20);
             bnwrNumShow.TabIndex = 31;
@@ -499,7 +499,7 @@
             // 
             jxgz.AutoSize = true;
             jxgz.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jxgz.Location = new Point(7, 435);
+            jxgz.Location = new Point(6, 403);
             jxgz.Name = "jxgz";
             jxgz.Size = new Size(116, 24);
             jxgz.TabIndex = 32;
@@ -508,7 +508,7 @@
             // wzxjMinus
             // 
             wzxjMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            wzxjMinus.Location = new Point(183, 435);
+            wzxjMinus.Location = new Point(182, 403);
             wzxjMinus.Name = "wzxjMinus";
             wzxjMinus.Size = new Size(29, 28);
             wzxjMinus.TabIndex = 33;
@@ -519,7 +519,7 @@
             // wzxjPlus
             // 
             wzxjPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            wzxjPlus.Location = new Point(242, 434);
+            wzxjPlus.Location = new Point(241, 402);
             wzxjPlus.Name = "wzxjPlus";
             wzxjPlus.Size = new Size(29, 28);
             wzxjPlus.TabIndex = 34;
@@ -530,7 +530,7 @@
             // wzxjNumShow
             // 
             wzxjNumShow.AutoSize = true;
-            wzxjNumShow.Location = new Point(218, 439);
+            wzxjNumShow.Location = new Point(217, 407);
             wzxjNumShow.Name = "wzxjNumShow";
             wzxjNumShow.Size = new Size(18, 20);
             wzxjNumShow.TabIndex = 35;
@@ -540,16 +540,16 @@
             // 
             ssdkq.AutoSize = true;
             ssdkq.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ssdkq.Location = new Point(7, 504);
+            ssdkq.Location = new Point(6, 515);
             ssdkq.Name = "ssdkq";
             ssdkq.Size = new Size(134, 24);
             ssdkq.TabIndex = 36;
-            ssdkq.Text = "神圣的渴求(40)";
+            ssdkq.Text = "神圣的渴求(35)";
             // 
             // rzwMinus
             // 
             rzwMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            rzwMinus.Location = new Point(183, 504);
+            rzwMinus.Location = new Point(182, 515);
             rzwMinus.Name = "rzwMinus";
             rzwMinus.Size = new Size(29, 28);
             rzwMinus.TabIndex = 37;
@@ -560,7 +560,7 @@
             // rzwPlus
             // 
             rzwPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            rzwPlus.Location = new Point(242, 504);
+            rzwPlus.Location = new Point(241, 515);
             rzwPlus.Name = "rzwPlus";
             rzwPlus.Size = new Size(29, 28);
             rzwPlus.TabIndex = 38;
@@ -571,7 +571,7 @@
             // rzwNumShow
             // 
             rzwNumShow.AutoSize = true;
-            rzwNumShow.Location = new Point(218, 508);
+            rzwNumShow.Location = new Point(217, 519);
             rzwNumShow.Name = "rzwNumShow";
             rzwNumShow.Size = new Size(18, 20);
             rzwNumShow.TabIndex = 39;
@@ -581,16 +581,16 @@
             // 
             mqgs.AutoSize = true;
             mqgs.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            mqgs.Location = new Point(7, 575);
+            mqgs.Location = new Point(6, 589);
             mqgs.Name = "mqgs";
             mqgs.Size = new Size(116, 24);
             mqgs.TabIndex = 40;
-            mqgs.Text = "谋求共识(40)";
+            mqgs.Text = "谋求共识(25)";
             // 
             // sysMinus
             // 
             sysMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            sysMinus.Location = new Point(183, 575);
+            sysMinus.Location = new Point(182, 589);
             sysMinus.Name = "sysMinus";
             sysMinus.Size = new Size(29, 28);
             sysMinus.TabIndex = 41;
@@ -601,7 +601,7 @@
             // sysPlus
             // 
             sysPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            sysPlus.Location = new Point(242, 575);
+            sysPlus.Location = new Point(241, 589);
             sysPlus.Name = "sysPlus";
             sysPlus.Size = new Size(29, 28);
             sysPlus.TabIndex = 42;
@@ -612,7 +612,7 @@
             // sysNumShow
             // 
             sysNumShow.AutoSize = true;
-            sysNumShow.Location = new Point(218, 579);
+            sysNumShow.Location = new Point(217, 593);
             sysNumShow.Name = "sysNumShow";
             sysNumShow.Size = new Size(18, 20);
             sysNumShow.TabIndex = 43;
@@ -654,7 +654,7 @@
             // 
             isF3YiGe.AutoSize = true;
             isF3YiGe.Font = new Font("Microsoft YaHei UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            isF3YiGe.Location = new Point(297, 602);
+            isF3YiGe.Location = new Point(296, 629);
             isF3YiGe.Name = "isF3YiGe";
             isF3YiGe.Size = new Size(228, 34);
             isF3YiGe.TabIndex = 51;
@@ -670,7 +670,7 @@
             sbdsd.Name = "sbdsd";
             sbdsd.Size = new Size(156, 28);
             sbdsd.TabIndex = 52;
-            sbdsd.Text = "失败的试胆(30)";
+            sbdsd.Text = "失败的试胆(15)";
             sbdsd.UseVisualStyleBackColor = true;
             sbdsd.CheckedChanged += hhcdSx_CheckedChanged;
             // 
@@ -735,7 +735,7 @@
             // 
             lz.AutoSize = true;
             lz.Font = new Font("Microsoft YaHei UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz.Location = new Point(296, 364);
+            lz.Location = new Point(296, 369);
             lz.Name = "lz";
             lz.Size = new Size(257, 36);
             lz.TabIndex = 68;
@@ -746,7 +746,7 @@
             lzPointShow.AutoSize = true;
             lzPointShow.Font = new Font("Microsoft YaHei UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             lzPointShow.ForeColor = Color.Orange;
-            lzPointShow.Location = new Point(559, 368);
+            lzPointShow.Location = new Point(555, 373);
             lzPointShow.Name = "lzPointShow";
             lzPointShow.Size = new Size(26, 30);
             lzPointShow.TabIndex = 69;
@@ -756,7 +756,7 @@
             // 
             lz6.AutoSize = true;
             lz6.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz6.Location = new Point(296, 402);
+            lz6.Location = new Point(296, 407);
             lz6.Name = "lz6";
             lz6.Size = new Size(80, 24);
             lz6.TabIndex = 70;
@@ -765,7 +765,7 @@
             // lz6Minus
             // 
             lz6Minus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz6Minus.Location = new Point(382, 401);
+            lz6Minus.Location = new Point(382, 406);
             lz6Minus.Name = "lz6Minus";
             lz6Minus.Size = new Size(29, 28);
             lz6Minus.TabIndex = 71;
@@ -776,7 +776,7 @@
             // lz6NumShow
             // 
             lz6NumShow.AutoSize = true;
-            lz6NumShow.Location = new Point(417, 405);
+            lz6NumShow.Location = new Point(417, 410);
             lz6NumShow.Name = "lz6NumShow";
             lz6NumShow.Size = new Size(18, 20);
             lz6NumShow.TabIndex = 72;
@@ -785,7 +785,7 @@
             // lz6Plus
             // 
             lz6Plus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz6Plus.Location = new Point(441, 401);
+            lz6Plus.Location = new Point(441, 406);
             lz6Plus.Name = "lz6Plus";
             lz6Plus.Size = new Size(29, 28);
             lz6Plus.TabIndex = 73;
@@ -797,7 +797,7 @@
             // 
             lz5.AutoSize = true;
             lz5.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz5.Location = new Point(297, 438);
+            lz5.Location = new Point(297, 443);
             lz5.Name = "lz5";
             lz5.Size = new Size(80, 24);
             lz5.TabIndex = 74;
@@ -806,7 +806,7 @@
             // lz5Minus
             // 
             lz5Minus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz5Minus.Location = new Point(383, 437);
+            lz5Minus.Location = new Point(383, 442);
             lz5Minus.Name = "lz5Minus";
             lz5Minus.Size = new Size(29, 28);
             lz5Minus.TabIndex = 75;
@@ -817,7 +817,7 @@
             // lz5NumShow
             // 
             lz5NumShow.AutoSize = true;
-            lz5NumShow.Location = new Point(416, 441);
+            lz5NumShow.Location = new Point(416, 446);
             lz5NumShow.Name = "lz5NumShow";
             lz5NumShow.Size = new Size(18, 20);
             lz5NumShow.TabIndex = 76;
@@ -826,7 +826,7 @@
             // lz5Plus
             // 
             lz5Plus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz5Plus.Location = new Point(441, 438);
+            lz5Plus.Location = new Point(441, 443);
             lz5Plus.Name = "lz5Plus";
             lz5Plus.Size = new Size(29, 28);
             lz5Plus.TabIndex = 77;
@@ -838,7 +838,7 @@
             // 
             lz4.AutoSize = true;
             lz4.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz4.Location = new Point(297, 471);
+            lz4.Location = new Point(297, 476);
             lz4.Name = "lz4";
             lz4.Size = new Size(69, 24);
             lz4.TabIndex = 78;
@@ -847,7 +847,7 @@
             // lz4Minus
             // 
             lz4Minus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz4Minus.Location = new Point(382, 470);
+            lz4Minus.Location = new Point(382, 475);
             lz4Minus.Name = "lz4Minus";
             lz4Minus.Size = new Size(29, 28);
             lz4Minus.TabIndex = 79;
@@ -858,7 +858,7 @@
             // lz4NumShow
             // 
             lz4NumShow.AutoSize = true;
-            lz4NumShow.Location = new Point(417, 474);
+            lz4NumShow.Location = new Point(417, 479);
             lz4NumShow.Name = "lz4NumShow";
             lz4NumShow.Size = new Size(18, 20);
             lz4NumShow.TabIndex = 80;
@@ -867,7 +867,7 @@
             // lz4Plus
             // 
             lz4Plus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            lz4Plus.Location = new Point(441, 470);
+            lz4Plus.Location = new Point(441, 475);
             lz4Plus.Name = "lz4Plus";
             lz4Plus.Size = new Size(29, 28);
             lz4Plus.TabIndex = 81;
@@ -901,7 +901,7 @@
             f3YiGePointShow.AutoSize = true;
             f3YiGePointShow.Font = new Font("Microsoft YaHei UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             f3YiGePointShow.ForeColor = Color.Orange;
-            f3YiGePointShow.Location = new Point(531, 603);
+            f3YiGePointShow.Location = new Point(559, 630);
             f3YiGePointShow.Name = "f3YiGePointShow";
             f3YiGePointShow.Size = new Size(26, 30);
             f3YiGePointShow.TabIndex = 95;
@@ -911,7 +911,7 @@
             // 
             yc.AutoSize = true;
             yc.Font = new Font("Microsoft YaHei UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            yc.Location = new Point(296, 507);
+            yc.Location = new Point(296, 515);
             yc.Name = "yc";
             yc.Size = new Size(211, 36);
             yc.TabIndex = 97;
@@ -922,7 +922,7 @@
             ycPointShow.AutoSize = true;
             ycPointShow.Font = new Font("Microsoft YaHei UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             ycPointShow.ForeColor = Color.Orange;
-            ycPointShow.Location = new Point(559, 511);
+            ycPointShow.Location = new Point(559, 519);
             ycPointShow.Name = "ycPointShow";
             ycPointShow.Size = new Size(26, 30);
             ycPointShow.TabIndex = 98;
@@ -932,7 +932,7 @@
             // 
             yc1.AutoSize = true;
             yc1.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            yc1.Location = new Point(297, 565);
+            yc1.Location = new Point(297, 573);
             yc1.Name = "yc1";
             yc1.Size = new Size(129, 24);
             yc1.TabIndex = 99;
@@ -941,7 +941,7 @@
             // ycNumShow
             // 
             ycNumShow.AutoSize = true;
-            ycNumShow.Location = new Point(467, 568);
+            ycNumShow.Location = new Point(467, 576);
             ycNumShow.Name = "ycNumShow";
             ycNumShow.Size = new Size(18, 20);
             ycNumShow.TabIndex = 101;
@@ -950,7 +950,7 @@
             // ycPlus
             // 
             ycPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ycPlus.Location = new Point(491, 564);
+            ycPlus.Location = new Point(491, 572);
             ycPlus.Name = "ycPlus";
             ycPlus.Size = new Size(29, 28);
             ycPlus.TabIndex = 102;
@@ -961,7 +961,7 @@
             // ycMinus
             // 
             ycMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ycMinus.Location = new Point(432, 564);
+            ycMinus.Location = new Point(432, 572);
             ycMinus.Name = "ycMinus";
             ycMinus.Size = new Size(29, 28);
             ycMinus.TabIndex = 103;
@@ -973,7 +973,7 @@
             // 
             xs.AutoSize = true;
             xs.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            xs.Location = new Point(638, 337);
+            xs.Location = new Point(638, 458);
             xs.Name = "xs";
             xs.Size = new Size(46, 24);
             xs.TabIndex = 109;
@@ -981,7 +981,7 @@
             // 
             // xsm
             // 
-            xsm.Location = new Point(690, 337);
+            xsm.Location = new Point(690, 458);
             xsm.Name = "xsm";
             xsm.Size = new Size(137, 27);
             xsm.TabIndex = 110;
@@ -990,7 +990,7 @@
             // 
             dw.AutoSize = true;
             dw.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            dw.Location = new Point(833, 337);
+            dw.Location = new Point(833, 458);
             dw.Name = "dw";
             dw.Size = new Size(46, 24);
             dw.TabIndex = 111;
@@ -998,7 +998,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(885, 337);
+            textBox1.Location = new Point(885, 458);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(152, 27);
             textBox1.TabIndex = 112;
@@ -1007,7 +1007,7 @@
             // 
             fen_dui.FormattingEnabled = true;
             fen_dui.Items.AddRange(new object[] { "指挥分队", "集群分队", "后勤分队", "矛头分队", "突击战术分队", "堡垒战术分队", "远程战术分队", "破坏战术分队", "高规格分队", "魂灵护送分队", "博闻广记分队", "蓝图测绘分队" });
-            fen_dui.Location = new Point(690, 369);
+            fen_dui.Location = new Point(690, 490);
             fen_dui.Name = "fen_dui";
             fen_dui.Size = new Size(137, 28);
             fen_dui.TabIndex = 113;
@@ -1018,7 +1018,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label4.Location = new Point(638, 369);
+            label4.Location = new Point(638, 490);
             label4.Name = "label4";
             label4.Size = new Size(46, 24);
             label4.TabIndex = 128;
@@ -1028,7 +1028,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label5.Location = new Point(833, 369);
+            label5.Location = new Point(833, 490);
             label5.Name = "label5";
             label5.Size = new Size(46, 24);
             label5.TabIndex = 129;
@@ -1036,14 +1036,14 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(885, 369);
+            textBox2.Location = new Point(885, 490);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(152, 27);
             textBox2.TabIndex = 130;
             // 
             // act
             // 
-            act.Location = new Point(836, 402);
+            act.Location = new Point(836, 523);
             act.Name = "act";
             act.Size = new Size(201, 93);
             act.TabIndex = 131;
@@ -1055,7 +1055,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft YaHei UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label6.Location = new Point(638, 499);
+            label6.Location = new Point(638, 620);
             label6.Name = "label6";
             label6.Size = new Size(113, 57);
             label6.TabIndex = 132;
@@ -1065,7 +1065,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label7.Location = new Point(638, 468);
+            label7.Location = new Point(638, 589);
             label7.Name = "label7";
             label7.Size = new Size(82, 24);
             label7.TabIndex = 133;
@@ -1073,7 +1073,7 @@
             // 
             // jsPointShow
             // 
-            jsPointShow.Location = new Point(726, 468);
+            jsPointShow.Location = new Point(726, 589);
             jsPointShow.Name = "jsPointShow";
             jsPointShow.Size = new Size(101, 27);
             jsPointShow.TabIndex = 134;
@@ -1084,7 +1084,7 @@
             totalShow.AutoSize = true;
             totalShow.Font = new Font("Microsoft YaHei UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 134);
             totalShow.ForeColor = Color.Red;
-            totalShow.Location = new Point(757, 504);
+            totalShow.Location = new Point(757, 625);
             totalShow.Name = "totalShow";
             totalShow.Size = new Size(45, 52);
             totalShow.TabIndex = 135;
@@ -1095,7 +1095,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ControlDarkDark;
-            label1.Location = new Point(731, 724);
+            label1.Location = new Point(742, 721);
             label1.Name = "label1";
             label1.Size = new Size(306, 20);
             label1.TabIndex = 139;
@@ -1103,7 +1103,7 @@
             // 
             // restart
             // 
-            restart.Location = new Point(903, 501);
+            restart.Location = new Point(903, 622);
             restart.Name = "restart";
             restart.Size = new Size(134, 55);
             restart.TabIndex = 140;
@@ -1119,7 +1119,7 @@
             xhd.Name = "xhd";
             xhd.Size = new Size(120, 28);
             xhd.TabIndex = 141;
-            xhd.Text = "信号灯(30)";
+            xhd.Text = "信号灯(20)";
             xhd.UseVisualStyleBackColor = true;
             xhd.CheckedChanged += xhd_CheckedChanged;
             // 
@@ -1131,7 +1131,7 @@
             wjdbf.Name = "wjdbf";
             wjdbf.Size = new Size(156, 28);
             wjdbf.TabIndex = 143;
-            wjdbf.Text = "玩具的报复(40)";
+            wjdbf.Text = "玩具的报复(30)";
             wjdbf.UseVisualStyleBackColor = true;
             wjdbf.CheckedChanged += wjdbf_CheckedChanged;
             // 
@@ -1143,22 +1143,9 @@
             zccm.Name = "zccm";
             zccm.Size = new Size(138, 28);
             zccm.TabIndex = 144;
-            zccm.Text = "战场侧面(40)";
+            zccm.Text = "战场侧面(20)";
             zccm.UseVisualStyleBackColor = true;
             zccm.CheckedChanged += zccm_CheckedChanged;
-            // 
-            // sbdsd_jj
-            // 
-            sbdsd_jj.AutoSize = true;
-            sbdsd_jj.Enabled = false;
-            sbdsd_jj.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            sbdsd_jj.Location = new Point(458, 104);
-            sbdsd_jj.Name = "sbdsd_jj";
-            sbdsd_jj.Size = new Size(115, 28);
-            sbdsd_jj.TabIndex = 145;
-            sbdsd_jj.Text = "紧急(+10)";
-            sbdsd_jj.UseVisualStyleBackColor = true;
-            sbdsd_jj.CheckedChanged += sbdsd_jj_CheckedChanged;
             // 
             // xhd_jj
             // 
@@ -1198,19 +1185,6 @@
             zccm_jj.Text = "紧急(+10)";
             zccm_jj.UseVisualStyleBackColor = true;
             zccm_jj.CheckedChanged += zccm_jj_CheckedChanged;
-            // 
-            // ysgl_jj
-            // 
-            ysgl_jj.AutoSize = true;
-            ysgl_jj.Enabled = false;
-            ysgl_jj.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ysgl_jj.Location = new Point(458, 296);
-            ysgl_jj.Name = "ysgl_jj";
-            ysgl_jj.Size = new Size(115, 28);
-            ysgl_jj.TabIndex = 149;
-            ysgl_jj.Text = "紧急(+10)";
-            ysgl_jj.UseVisualStyleBackColor = true;
-            ysgl_jj.CheckedChanged += ysgl_jj_CheckedChanged;
             // 
             // ysgl_wl
             // 
@@ -1257,13 +1231,13 @@
             sc.Name = "sc";
             sc.Size = new Size(113, 28);
             sc.TabIndex = 153;
-            sc.Text = "圣城(100)";
+            sc.Text = "授法(250)";
             sc.UseVisualStyleBackColor = true;
             sc.CheckedChanged += sc_CheckedChanged;
             // 
             // sxNumShow
             // 
-            sxNumShow.Location = new Point(885, 299);
+            sxNumShow.Location = new Point(885, 420);
             sxNumShow.Name = "sxNumShow";
             sxNumShow.Size = new Size(152, 27);
             sxNumShow.TabIndex = 108;
@@ -1273,7 +1247,7 @@
             // 
             sx.AutoSize = true;
             sx.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            sx.Location = new Point(833, 299);
+            sx.Location = new Point(833, 420);
             sx.Name = "sx";
             sx.Size = new Size(46, 24);
             sx.TabIndex = 107;
@@ -1281,7 +1255,7 @@
             // 
             // cpNumShow
             // 
-            cpNumShow.Location = new Point(690, 299);
+            cpNumShow.Location = new Point(690, 420);
             cpNumShow.Name = "cpNumShow";
             cpNumShow.Size = new Size(137, 27);
             cpNumShow.TabIndex = 106;
@@ -1291,7 +1265,7 @@
             // 
             cp.AutoSize = true;
             cp.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            cp.Location = new Point(638, 299);
+            cp.Location = new Point(638, 420);
             cp.Name = "cp";
             cp.Size = new Size(46, 24);
             cp.TabIndex = 105;
@@ -1304,9 +1278,9 @@
             jjsk_nd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             jjsk_nd.Location = new Point(638, 103);
             jjsk_nd.Name = "jjsk_nd";
-            jjsk_nd.Size = new Size(203, 28);
+            jjsk_nd.Size = new Size(214, 28);
             jjsk_nd.TabIndex = 154;
-            jjsk_nd.Text = "拥挤/奇观/魔王(+20)";
+            jjsk_nd.Text = "5部署/奇观/魔王(+40)";
             jjsk_nd.UseVisualStyleBackColor = true;
             jjsk_nd.CheckedChanged += jjsk_nd_CheckedChanged;
             // 
@@ -1319,7 +1293,7 @@
             jjsk_hl.Name = "jjsk_hl";
             jjsk_hl.Size = new Size(151, 28);
             jjsk_hl.TabIndex = 155;
-            jjsk_hl.Text = "思维混乱(+20)";
+            jjsk_hl.Text = "思维混乱(+40)";
             jjsk_hl.UseVisualStyleBackColor = true;
             jjsk_hl.CheckedChanged += jjsk_hl_CheckedChanged;
             // 
@@ -1330,9 +1304,9 @@
             cy_nd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             cy_nd.Location = new Point(638, 180);
             cy_nd.Name = "cy_nd";
-            cy_nd.Size = new Size(203, 28);
+            cy_nd.Size = new Size(214, 28);
             cy_nd.TabIndex = 156;
-            cy_nd.Text = "拥挤/奇观/魔王(+20)";
+            cy_nd.Text = "5部署/奇观/魔王(+40)";
             cy_nd.UseVisualStyleBackColor = true;
             cy_nd.CheckedChanged += cy_nd_CheckedChanged;
             // 
@@ -1345,7 +1319,7 @@
             cy_hl.Name = "cy_hl";
             cy_hl.Size = new Size(151, 28);
             cy_hl.TabIndex = 157;
-            cy_hl.Text = "思维混乱(+20)";
+            cy_hl.Text = "思维混乱(+40)";
             cy_hl.UseVisualStyleBackColor = true;
             cy_hl.CheckedChanged += cy_hl_CheckedChanged;
             // 
@@ -1356,9 +1330,9 @@
             sc_nd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             sc_nd.Location = new Point(638, 258);
             sc_nd.Name = "sc_nd";
-            sc_nd.Size = new Size(203, 28);
+            sc_nd.Size = new Size(214, 28);
             sc_nd.TabIndex = 158;
-            sc_nd.Text = "拥挤/奇观/魔王(+30)";
+            sc_nd.Text = "5部署/奇观/魔王(+50)";
             sc_nd.UseVisualStyleBackColor = true;
             sc_nd.CheckedChanged += sc_nd_CheckedChanged;
             // 
@@ -1371,7 +1345,7 @@
             sc_hl.Name = "sc_hl";
             sc_hl.Size = new Size(151, 28);
             sc_hl.TabIndex = 159;
-            sc_hl.Text = "思维混乱(+30)";
+            sc_hl.Text = "思维混乱(+60)";
             sc_hl.UseVisualStyleBackColor = true;
             sc_hl.CheckedChanged += sc_hl_CheckedChanged;
             // 
@@ -1379,7 +1353,7 @@
             // 
             fdLabel.AutoSize = true;
             fdLabel.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            fdLabel.Location = new Point(638, 399);
+            fdLabel.Location = new Point(638, 520);
             fdLabel.Name = "fdLabel";
             fdLabel.Size = new Size(82, 24);
             fdLabel.TabIndex = 160;
@@ -1389,7 +1363,7 @@
             // fdMinus
             // 
             fdMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            fdMinus.Location = new Point(726, 399);
+            fdMinus.Location = new Point(726, 520);
             fdMinus.Name = "fdMinus";
             fdMinus.Size = new Size(29, 28);
             fdMinus.TabIndex = 161;
@@ -1403,7 +1377,7 @@
             // fdNumShow
             // 
             fdNumShow.AutoSize = true;
-            fdNumShow.Location = new Point(761, 402);
+            fdNumShow.Location = new Point(761, 523);
             fdNumShow.Name = "fdNumShow";
             fdNumShow.Size = new Size(18, 20);
             fdNumShow.TabIndex = 162;
@@ -1413,7 +1387,7 @@
             // fdPlus
             // 
             fdPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            fdPlus.Location = new Point(794, 398);
+            fdPlus.Location = new Point(794, 519);
             fdPlus.Name = "fdPlus";
             fdPlus.Size = new Size(29, 28);
             fdPlus.TabIndex = 163;
@@ -1428,7 +1402,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label2.Location = new Point(638, 432);
+            label2.Location = new Point(638, 553);
             label2.Name = "label2";
             label2.Size = new Size(82, 24);
             label2.TabIndex = 164;
@@ -1436,7 +1410,7 @@
             // 
             // xzPointShow
             // 
-            xzPointShow.Location = new Point(726, 432);
+            xzPointShow.Location = new Point(726, 553);
             xzPointShow.Name = "xzPointShow";
             xzPointShow.Size = new Size(101, 27);
             xzPointShow.TabIndex = 165;
@@ -1444,7 +1418,7 @@
             // 
             // ye_qian
             // 
-            ye_qian.Location = new Point(385, 648);
+            ye_qian.Location = new Point(384, 675);
             ye_qian.Name = "ye_qian";
             ye_qian.Size = new Size(78, 27);
             ye_qian.TabIndex = 166;
@@ -1454,7 +1428,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label3.Location = new Point(297, 648);
+            label3.Location = new Point(296, 675);
             label3.Name = "label3";
             label3.Size = new Size(82, 24);
             label3.TabIndex = 167;
@@ -1464,7 +1438,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label8.Location = new Point(297, 686);
+            label8.Location = new Point(296, 713);
             label8.Name = "label8";
             label8.Size = new Size(82, 24);
             label8.TabIndex = 168;
@@ -1474,7 +1448,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label9.Location = new Point(469, 686);
+            label9.Location = new Point(468, 713);
             label9.Name = "label9";
             label9.Size = new Size(82, 24);
             label9.TabIndex = 169;
@@ -1482,7 +1456,7 @@
             // 
             // ye_hou
             // 
-            ye_hou.Location = new Point(385, 686);
+            ye_hou.Location = new Point(384, 713);
             ye_hou.Name = "ye_hou";
             ye_hou.Size = new Size(78, 27);
             ye_hou.TabIndex = 170;
@@ -1491,7 +1465,7 @@
             // qq_sum
             // 
             qq_sum.AutoSize = true;
-            qq_sum.Location = new Point(557, 689);
+            qq_sum.Location = new Point(556, 716);
             qq_sum.Name = "qq_sum";
             qq_sum.Size = new Size(18, 20);
             qq_sum.TabIndex = 171;
@@ -1526,7 +1500,7 @@
             // _4xy5NumShow
             // 
             _4xy5NumShow.AutoSize = true;
-            _4xy5NumShow.Location = new Point(218, 645);
+            _4xy5NumShow.Location = new Point(218, 684);
             _4xy5NumShow.Name = "_4xy5NumShow";
             _4xy5NumShow.Size = new Size(18, 20);
             _4xy5NumShow.TabIndex = 176;
@@ -1535,7 +1509,7 @@
             // _4xy5Plus
             // 
             _4xy5Plus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            _4xy5Plus.Location = new Point(242, 641);
+            _4xy5Plus.Location = new Point(242, 680);
             _4xy5Plus.Name = "_4xy5Plus";
             _4xy5Plus.Size = new Size(29, 28);
             _4xy5Plus.TabIndex = 175;
@@ -1546,7 +1520,7 @@
             // _4xy5Minus
             // 
             _4xy5Minus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            _4xy5Minus.Location = new Point(183, 641);
+            _4xy5Minus.Location = new Point(183, 680);
             _4xy5Minus.Name = "_4xy5Minus";
             _4xy5Minus.Size = new Size(29, 28);
             _4xy5Minus.TabIndex = 174;
@@ -1558,7 +1532,7 @@
             // 
             _4xy5.AutoSize = true;
             _4xy5.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            _4xy5.Location = new Point(7, 641);
+            _4xy5.Location = new Point(7, 680);
             _4xy5.Name = "_4xy5";
             _4xy5.Size = new Size(151, 24);
             _4xy5.TabIndex = 173;
@@ -1567,7 +1541,7 @@
             // jrndNumShow
             // 
             jrndNumShow.AutoSize = true;
-            jrndNumShow.Location = new Point(218, 678);
+            jrndNumShow.Location = new Point(218, 717);
             jrndNumShow.Name = "jrndNumShow";
             jrndNumShow.Size = new Size(18, 20);
             jrndNumShow.TabIndex = 180;
@@ -1576,7 +1550,7 @@
             // jrndPlus
             // 
             jrndPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jrndPlus.Location = new Point(242, 674);
+            jrndPlus.Location = new Point(242, 713);
             jrndPlus.Name = "jrndPlus";
             jrndPlus.Size = new Size(29, 28);
             jrndPlus.TabIndex = 179;
@@ -1587,7 +1561,7 @@
             // jrndMinus
             // 
             jrndMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jrndMinus.Location = new Point(183, 674);
+            jrndMinus.Location = new Point(183, 713);
             jrndMinus.Name = "jrndMinus";
             jrndMinus.Size = new Size(29, 28);
             jrndMinus.TabIndex = 178;
@@ -1599,7 +1573,7 @@
             // 
             jrnd.AutoSize = true;
             jrnd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jrnd.Location = new Point(7, 674);
+            jrnd.Location = new Point(7, 713);
             jrnd.Name = "jrnd";
             jrnd.Size = new Size(105, 24);
             jrnd.TabIndex = 177;
@@ -1608,7 +1582,7 @@
             // tzNddcNumShow
             // 
             tzNddcNumShow.AutoSize = true;
-            tzNddcNumShow.Location = new Point(218, 711);
+            tzNddcNumShow.Location = new Point(217, 198);
             tzNddcNumShow.Name = "tzNddcNumShow";
             tzNddcNumShow.Size = new Size(18, 20);
             tzNddcNumShow.TabIndex = 184;
@@ -1617,7 +1591,7 @@
             // tzNddcPlus
             // 
             tzNddcPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tzNddcPlus.Location = new Point(242, 707);
+            tzNddcPlus.Location = new Point(242, 194);
             tzNddcPlus.Name = "tzNddcPlus";
             tzNddcPlus.Size = new Size(29, 28);
             tzNddcPlus.TabIndex = 183;
@@ -1628,7 +1602,7 @@
             // tzNddcMinus
             // 
             tzNddcMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tzNddcMinus.Location = new Point(183, 707);
+            tzNddcMinus.Location = new Point(182, 194);
             tzNddcMinus.Name = "tzNddcMinus";
             tzNddcMinus.Size = new Size(29, 28);
             tzNddcMinus.TabIndex = 182;
@@ -1640,16 +1614,16 @@
             // 
             tzNddc.AutoSize = true;
             tzNddc.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            tzNddc.Location = new Point(7, 707);
+            tzNddc.Location = new Point(6, 195);
             tzNddc.Name = "tzNddc";
-            tzNddc.Size = new Size(152, 24);
+            tzNddc.Size = new Size(80, 24);
             tzNddc.TabIndex = 181;
-            tzNddc.Text = "天灾年代断层(20)";
+            tzNddc.Text = "混沌(15)";
             // 
             // ndKlmdNumShow
             // 
             ndKlmdNumShow.AutoSize = true;
-            ndKlmdNumShow.Location = new Point(218, 108);
+            ndKlmdNumShow.Location = new Point(217, 107);
             ndKlmdNumShow.Name = "ndKlmdNumShow";
             ndKlmdNumShow.Size = new Size(18, 20);
             ndKlmdNumShow.TabIndex = 188;
@@ -1658,7 +1632,7 @@
             // ndKlmdPlus
             // 
             ndKlmdPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndKlmdPlus.Location = new Point(242, 104);
+            ndKlmdPlus.Location = new Point(241, 103);
             ndKlmdPlus.Name = "ndKlmdPlus";
             ndKlmdPlus.Size = new Size(29, 28);
             ndKlmdPlus.TabIndex = 187;
@@ -1669,7 +1643,7 @@
             // ndKlmdMinus
             // 
             ndKlmdMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndKlmdMinus.Location = new Point(183, 104);
+            ndKlmdMinus.Location = new Point(183, 103);
             ndKlmdMinus.Name = "ndKlmdMinus";
             ndKlmdMinus.Size = new Size(29, 28);
             ndKlmdMinus.TabIndex = 186;
@@ -1683,55 +1657,14 @@
             ndKlmd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             ndKlmd.Location = new Point(7, 104);
             ndKlmd.Name = "ndKlmd";
-            ndKlmd.Size = new Size(160, 24);
+            ndKlmd.Size = new Size(116, 24);
             ndKlmd.TabIndex = 185;
-            ndKlmd.Text = "魔王/奇观魔典(20)";
-            // 
-            // mwXhydNumShow
-            // 
-            mwXhydNumShow.AutoSize = true;
-            mwXhydNumShow.Location = new Point(218, 224);
-            mwXhydNumShow.Name = "mwXhydNumShow";
-            mwXhydNumShow.Size = new Size(18, 20);
-            mwXhydNumShow.TabIndex = 192;
-            mwXhydNumShow.Text = "0";
-            // 
-            // mwXhydPlus
-            // 
-            mwXhydPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            mwXhydPlus.Location = new Point(242, 220);
-            mwXhydPlus.Name = "mwXhydPlus";
-            mwXhydPlus.Size = new Size(29, 28);
-            mwXhydPlus.TabIndex = 191;
-            mwXhydPlus.Text = "十";
-            mwXhydPlus.UseVisualStyleBackColor = true;
-            mwXhydPlus.Click += mwXhydPlus_Click;
-            // 
-            // mwXhydMinus
-            // 
-            mwXhydMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            mwXhydMinus.Location = new Point(183, 220);
-            mwXhydMinus.Name = "mwXhydMinus";
-            mwXhydMinus.Size = new Size(29, 28);
-            mwXhydMinus.TabIndex = 190;
-            mwXhydMinus.Text = "一";
-            mwXhydMinus.UseVisualStyleBackColor = true;
-            mwXhydMinus.Click += mwXhydMinus_Click;
-            // 
-            // mwXhyd
-            // 
-            mwXhyd.AutoSize = true;
-            mwXhyd.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            mwXhyd.Location = new Point(7, 220);
-            mwXhyd.Name = "mwXhyd";
-            mwXhyd.Size = new Size(152, 24);
-            mwXhyd.TabIndex = 189;
-            mwXhyd.Text = "魔王猩红甬道(30)";
+            ndKlmd.Text = "奇观魔典(15)";
             // 
             // ndJhgzNumShow
             // 
             ndJhgzNumShow.AutoSize = true;
-            ndJhgzNumShow.Location = new Point(218, 472);
+            ndJhgzNumShow.Location = new Point(217, 439);
             ndJhgzNumShow.Name = "ndJhgzNumShow";
             ndJhgzNumShow.Size = new Size(18, 20);
             ndJhgzNumShow.TabIndex = 196;
@@ -1740,7 +1673,7 @@
             // ndJhgzPlus
             // 
             ndJhgzPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndJhgzPlus.Location = new Point(242, 467);
+            ndJhgzPlus.Location = new Point(241, 434);
             ndJhgzPlus.Name = "ndJhgzPlus";
             ndJhgzPlus.Size = new Size(29, 28);
             ndJhgzPlus.TabIndex = 195;
@@ -1751,7 +1684,7 @@
             // ndJhgzMinus
             // 
             ndJhgzMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndJhgzMinus.Location = new Point(183, 468);
+            ndJhgzMinus.Location = new Point(182, 435);
             ndJhgzMinus.Name = "ndJhgzMinus";
             ndJhgzMinus.Size = new Size(29, 28);
             ndJhgzMinus.TabIndex = 194;
@@ -1763,57 +1696,16 @@
             // 
             ndJhgz.AutoSize = true;
             ndJhgz.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndJhgz.Location = new Point(7, 468);
+            ndJhgz.Location = new Point(6, 435);
             ndJhgz.Name = "ndJhgz";
-            ndJhgz.Size = new Size(160, 24);
+            ndJhgz.Size = new Size(80, 24);
             ndJhgz.TabIndex = 193;
-            ndJhgz.Text = "苦难/奇观耕种(40)";
-            // 
-            // ndTdfsNumShow
-            // 
-            ndTdfsNumShow.AutoSize = true;
-            ndTdfsNumShow.Location = new Point(218, 406);
-            ndTdfsNumShow.Name = "ndTdfsNumShow";
-            ndTdfsNumShow.Size = new Size(18, 20);
-            ndTdfsNumShow.TabIndex = 200;
-            ndTdfsNumShow.Text = "0";
-            // 
-            // ndTdfsPlus
-            // 
-            ndTdfsPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndTdfsPlus.Location = new Point(242, 403);
-            ndTdfsPlus.Name = "ndTdfsPlus";
-            ndTdfsPlus.Size = new Size(29, 28);
-            ndTdfsPlus.TabIndex = 199;
-            ndTdfsPlus.Text = "十";
-            ndTdfsPlus.UseVisualStyleBackColor = true;
-            ndTdfsPlus.Click += ndTdfsPlus_Click;
-            // 
-            // ndTdfsMinus
-            // 
-            ndTdfsMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndTdfsMinus.Location = new Point(183, 403);
-            ndTdfsMinus.Name = "ndTdfsMinus";
-            ndTdfsMinus.Size = new Size(29, 28);
-            ndTdfsMinus.TabIndex = 198;
-            ndTdfsMinus.Text = "一";
-            ndTdfsMinus.UseVisualStyleBackColor = true;
-            ndTdfsMinus.Click += ndTdfsMinus_Click;
-            // 
-            // ndTdfs
-            // 
-            ndTdfs.AutoSize = true;
-            ndTdfs.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndTdfs.Location = new Point(7, 403);
-            ndTdfs.Name = "ndTdfs";
-            ndTdfs.Size = new Size(152, 24);
-            ndTdfs.TabIndex = 197;
-            ndTdfs.Text = "奇观通道封锁(35)";
+            ndJhgz.Text = "建制(45)";
             // 
             // ndMqgsNumShow
             // 
             ndMqgsNumShow.AutoSize = true;
-            ndMqgsNumShow.Location = new Point(218, 612);
+            ndMqgsNumShow.Location = new Point(218, 629);
             ndMqgsNumShow.Name = "ndMqgsNumShow";
             ndMqgsNumShow.Size = new Size(18, 20);
             ndMqgsNumShow.TabIndex = 204;
@@ -1822,7 +1714,7 @@
             // ndMqgsPlus
             // 
             ndMqgsPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndMqgsPlus.Location = new Point(242, 608);
+            ndMqgsPlus.Location = new Point(242, 625);
             ndMqgsPlus.Name = "ndMqgsPlus";
             ndMqgsPlus.Size = new Size(29, 28);
             ndMqgsPlus.TabIndex = 203;
@@ -1833,7 +1725,7 @@
             // ndMqgsMinus
             // 
             ndMqgsMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndMqgsMinus.Location = new Point(183, 608);
+            ndMqgsMinus.Location = new Point(183, 625);
             ndMqgsMinus.Name = "ndMqgsMinus";
             ndMqgsMinus.Size = new Size(29, 28);
             ndMqgsMinus.TabIndex = 202;
@@ -1845,16 +1737,16 @@
             // 
             ndMqgs.AutoSize = true;
             ndMqgs.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndMqgs.Location = new Point(7, 608);
+            ndMqgs.Location = new Point(7, 625);
             ndMqgs.Name = "ndMqgs";
-            ndMqgs.Size = new Size(152, 24);
+            ndMqgs.Size = new Size(116, 24);
             ndMqgs.TabIndex = 201;
-            ndMqgs.Text = "奇观谋求共识(60)";
+            ndMqgs.Text = "洞天福地(45)";
             // 
             // ndSsdkqNumShow
             // 
             ndSsdkqNumShow.AutoSize = true;
-            ndSsdkqNumShow.Location = new Point(218, 546);
+            ndSsdkqNumShow.Location = new Point(218, 554);
             ndSsdkqNumShow.Name = "ndSsdkqNumShow";
             ndSsdkqNumShow.Size = new Size(18, 20);
             ndSsdkqNumShow.TabIndex = 208;
@@ -1863,7 +1755,7 @@
             // ndSsdkqPlus
             // 
             ndSsdkqPlus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndSsdkqPlus.Location = new Point(242, 542);
+            ndSsdkqPlus.Location = new Point(242, 550);
             ndSsdkqPlus.Name = "ndSsdkqPlus";
             ndSsdkqPlus.Size = new Size(29, 28);
             ndSsdkqPlus.TabIndex = 207;
@@ -1874,7 +1766,7 @@
             // ndSsdkqMinus
             // 
             ndSsdkqMinus.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndSsdkqMinus.Location = new Point(183, 542);
+            ndSsdkqMinus.Location = new Point(183, 550);
             ndSsdkqMinus.Name = "ndSsdkqMinus";
             ndSsdkqMinus.Size = new Size(29, 28);
             ndSsdkqMinus.TabIndex = 206;
@@ -1886,24 +1778,11 @@
             // 
             ndSsdkq.AutoSize = true;
             ndSsdkq.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            ndSsdkq.Location = new Point(7, 542);
+            ndSsdkq.Location = new Point(7, 550);
             ndSsdkq.Name = "ndSsdkq";
-            ndSsdkq.Size = new Size(170, 24);
+            ndSsdkq.Size = new Size(80, 24);
             ndSsdkq.TabIndex = 205;
-            ndSsdkq.Text = "苦难奇观天灾渴(60)";
-            // 
-            // jxjs_jj
-            // 
-            jxjs_jj.AutoSize = true;
-            jxjs_jj.Enabled = false;
-            jxjs_jj.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            jxjs_jj.Location = new Point(459, 179);
-            jxjs_jj.Name = "jxjs_jj";
-            jxjs_jj.Size = new Size(115, 28);
-            jxjs_jj.TabIndex = 210;
-            jxjs_jj.Text = "紧急(+10)";
-            jxjs_jj.UseVisualStyleBackColor = true;
-            jxjs_jj.CheckedChanged += jxjs_jj_CheckedChanged;
+            ndSsdkq.Text = "外道(35)";
             // 
             // jxjs
             // 
@@ -1913,16 +1792,131 @@
             jxjs.Name = "jxjs";
             jxjs.Size = new Size(138, 28);
             jxjs.TabIndex = 209;
-            jxjs.Text = "劫虚济实(35)";
+            jxjs.Text = "劫虚济实(20)";
             jxjs.UseVisualStyleBackColor = true;
             jxjs.CheckedChanged += jxjs_CheckedChanged;
+            // 
+            // label11
+            // 
+            label11.BorderStyle = BorderStyle.Fixed3D;
+            label11.Location = new Point(7, 179);
+            label11.Name = "label11";
+            label11.Size = new Size(264, 2);
+            label11.TabIndex = 211;
+            label11.Text = "label11";
+            // 
+            // label12
+            // 
+            label12.BorderStyle = BorderStyle.Fixed3D;
+            label12.Location = new Point(7, 391);
+            label12.Name = "label12";
+            label12.Size = new Size(264, 2);
+            label12.TabIndex = 212;
+            label12.Text = "label12";
+            // 
+            // label14
+            // 
+            label14.BorderStyle = BorderStyle.Fixed3D;
+            label14.Location = new Point(6, 504);
+            label14.Name = "label14";
+            label14.Size = new Size(264, 2);
+            label14.TabIndex = 214;
+            label14.Text = "label14";
+            // 
+            // label17
+            // 
+            label17.BorderStyle = BorderStyle.Fixed3D;
+            label17.Location = new Point(7, 670);
+            label17.Name = "label17";
+            label17.Size = new Size(264, 2);
+            label17.TabIndex = 217;
+            label17.Text = "label17";
+            // 
+            // jjsk_yg
+            // 
+            jjsk_yg.AutoSize = true;
+            jjsk_yg.Enabled = false;
+            jjsk_yg.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            jjsk_yg.Location = new Point(847, 60);
+            jjsk_yg.Name = "jjsk_yg";
+            jjsk_yg.Size = new Size(115, 28);
+            jjsk_yg.TabIndex = 218;
+            jjsk_yg.Text = "异格(+50)";
+            jjsk_yg.UseVisualStyleBackColor = true;
+            jjsk_yg.CheckedChanged += jjsk_yg_CheckedChanged;
+            // 
+            // pb
+            // 
+            pb.AutoSize = true;
+            pb.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            pb.Location = new Point(638, 329);
+            pb.Name = "pb";
+            pb.Size = new Size(115, 28);
+            pb.TabIndex = 219;
+            pb.Text = "片瓣(+30)";
+            pb.UseVisualStyleBackColor = true;
+            pb.CheckedChanged += pb_CheckedChanged;
+            // 
+            // label13
+            // 
+            label13.BorderStyle = BorderStyle.Fixed3D;
+            label13.Location = new Point(690, 311);
+            label13.Name = "label13";
+            label13.Size = new Size(264, 2);
+            label13.TabIndex = 220;
+            label13.Text = "label13";
+            // 
+            // xzcj
+            // 
+            xzcj.AutoSize = true;
+            xzcj.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            xzcj.Location = new Point(847, 325);
+            xzcj.Name = "xzcj";
+            xzcj.Size = new Size(150, 28);
+            xzcj.TabIndex = 221;
+            xzcj.Text = "先知长角(*0.6)";
+            xzcj.UseVisualStyleBackColor = true;
+            xzcj.CheckedChanged += xzcj_CheckedChanged;
+            // 
+            // ansjm
+            // 
+            ansjm.AutoSize = true;
+            ansjm.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            ansjm.Location = new Point(638, 377);
+            ansjm.Name = "ansjm";
+            ansjm.Size = new Size(169, 28);
+            ansjm.TabIndex = 222;
+            ansjm.Text = "阿纳萨羯摩(+60)";
+            ansjm.UseVisualStyleBackColor = true;
+            ansjm.CheckedChanged += ansjm_CheckedChanged;
+            // 
+            // gdxz
+            // 
+            gdxz.AutoSize = true;
+            gdxz.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            gdxz.Location = new Point(847, 375);
+            gdxz.Name = "gdxz";
+            gdxz.Size = new Size(218, 28);
+            gdxz.TabIndex = 223;
+            gdxz.Text = "滚动先祖&&&&授法(*1.1)";
+            gdxz.UseVisualStyleBackColor = true;
+            gdxz.CheckedChanged += gdxz_CheckedChanged;
             // 
             // dhsForm
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1040, 743);
-            Controls.Add(jxjs_jj);
+            ClientSize = new Size(1060, 746);
+            Controls.Add(gdxz);
+            Controls.Add(ansjm);
+            Controls.Add(xzcj);
+            Controls.Add(label13);
+            Controls.Add(pb);
+            Controls.Add(jjsk_yg);
+            Controls.Add(label17);
+            Controls.Add(label14);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(jxjs);
             Controls.Add(ndSsdkqNumShow);
             Controls.Add(ndSsdkqPlus);
@@ -1932,18 +1926,10 @@
             Controls.Add(ndMqgsPlus);
             Controls.Add(ndMqgsMinus);
             Controls.Add(ndMqgs);
-            Controls.Add(ndTdfsNumShow);
-            Controls.Add(ndTdfsPlus);
-            Controls.Add(ndTdfsMinus);
-            Controls.Add(ndTdfs);
             Controls.Add(ndJhgzNumShow);
             Controls.Add(ndJhgzPlus);
             Controls.Add(ndJhgzMinus);
             Controls.Add(ndJhgz);
-            Controls.Add(mwXhydNumShow);
-            Controls.Add(mwXhydPlus);
-            Controls.Add(mwXhydMinus);
-            Controls.Add(mwXhyd);
             Controls.Add(ndKlmdNumShow);
             Controls.Add(ndKlmdPlus);
             Controls.Add(ndKlmdMinus);
@@ -1983,11 +1969,9 @@
             Controls.Add(cy);
             Controls.Add(jjsk);
             Controls.Add(ysgl_wl);
-            Controls.Add(ysgl_jj);
             Controls.Add(zccm_jj);
             Controls.Add(wjdbf_jj);
             Controls.Add(xhd_jj);
-            Controls.Add(sbdsd_jj);
             Controls.Add(zccm);
             Controls.Add(wjdbf);
             Controls.Add(xhd);
@@ -2087,7 +2071,8 @@
             ForeColor = SystemColors.WindowText;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "dhsForm";
-            Text = "嘤语打分_大荒狩#2.0.2";
+            Text = "嘤语打分_大荒狩#2.1.0 beta";
+            Load += dhsForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2186,11 +2171,9 @@
         private CheckBox xhd;
         private CheckBox wjdbf;
         private CheckBox zccm;
-        private CheckBox sbdsd_jj;
         private CheckBox xhd_jj;
         private CheckBox wjdbf_jj;
         private CheckBox zccm_jj;
-        private CheckBox ysgl_jj;
         private CheckBox ysgl_wl;
         private CheckBox jjsk;
         private CheckBox cy;
@@ -2238,18 +2221,10 @@
         private Button ndKlmdPlus;
         private Button ndKlmdMinus;
         private Label ndKlmd;
-        private Label mwXhydNumShow;
-        private Button mwXhydPlus;
-        private Button mwXhydMinus;
-        private Label mwXhyd;
         private Label ndJhgzNumShow;
         private Button ndJhgzPlus;
         private Button ndJhgzMinus;
         private Label ndJhgz;
-        private Label ndTdfsNumShow;
-        private Button ndTdfsPlus;
-        private Button ndTdfsMinus;
-        private Label ndTdfs;
         private Label ndMqgsNumShow;
         private Button ndMqgsPlus;
         private Button ndMqgsMinus;
@@ -2258,7 +2233,16 @@
         private Button ndSsdkqPlus;
         private Button ndSsdkqMinus;
         private Label ndSsdkq;
-        private CheckBox jxjs_jj;
         private CheckBox jxjs;
+        private Label label11;
+        private Label label12;
+        private Label label14;
+        private Label label17;
+        private CheckBox jjsk_yg;
+        private CheckBox pb;
+        private Label label13;
+        private CheckBox xzcj;
+        private CheckBox ansjm;
+        private CheckBox gdxz;
     }
 }
