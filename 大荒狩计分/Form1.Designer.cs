@@ -1006,7 +1006,7 @@
             // fen_dui
             // 
             fen_dui.FormattingEnabled = true;
-            fen_dui.Items.AddRange(new object[] { "指挥分队", "集群分队", "后勤分队", "矛头分队", "突击战术分队", "堡垒战术分队", "远程战术分队", "破坏战术分队", "高规格分队", "魂灵护送分队", "博闻广记分队", "蓝图测绘分队" });
+            fen_dui.Items.AddRange(new object[] { "指挥分队", "集群分队", "后勤分队", "矛头分队", "突击战术分队", "堡垒战术分队", "远程战术分队", "破坏战术分队", "高规格分队", "魂灵护送分队", "博闻广记分队", "蓝图测绘分队", "因地制宜分队", "点刺成锭分队", "拟态学者分队", "异想天开分队" });
             fen_dui.Location = new Point(690, 490);
             fen_dui.Name = "fen_dui";
             fen_dui.Size = new Size(137, 28);
@@ -1217,9 +1217,9 @@
             cy.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             cy.Location = new Point(638, 141);
             cy.Name = "cy";
-            cy.Size = new Size(102, 28);
+            cy.Size = new Size(113, 28);
             cy.TabIndex = 152;
-            cy.Text = "朝谒(60)";
+            cy.Text = "朝谒(100)";
             cy.UseVisualStyleBackColor = true;
             cy.CheckedChanged += cy_CheckedChanged;
             // 
@@ -1280,7 +1280,7 @@
             jjsk_nd.Name = "jjsk_nd";
             jjsk_nd.Size = new Size(214, 28);
             jjsk_nd.TabIndex = 154;
-            jjsk_nd.Text = "5部署/奇观/魔王(+40)";
+            jjsk_nd.Text = "4部署/奇观/魔王(+40)";
             jjsk_nd.UseVisualStyleBackColor = true;
             jjsk_nd.CheckedChanged += jjsk_nd_CheckedChanged;
             // 
@@ -1306,7 +1306,7 @@
             cy_nd.Name = "cy_nd";
             cy_nd.Size = new Size(214, 28);
             cy_nd.TabIndex = 156;
-            cy_nd.Text = "5部署/奇观/魔王(+40)";
+            cy_nd.Text = "4部署/奇观/魔王(+40)";
             cy_nd.UseVisualStyleBackColor = true;
             cy_nd.CheckedChanged += cy_nd_CheckedChanged;
             // 
@@ -1839,9 +1839,9 @@
             jjsk_yg.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 134);
             jjsk_yg.Location = new Point(847, 60);
             jjsk_yg.Name = "jjsk_yg";
-            jjsk_yg.Size = new Size(115, 28);
+            jjsk_yg.Size = new Size(133, 28);
             jjsk_yg.TabIndex = 218;
-            jjsk_yg.Text = "异格(+50)";
+            jjsk_yg.Text = "异格(另+50)";
             jjsk_yg.UseVisualStyleBackColor = true;
             jjsk_yg.CheckedChanged += jjsk_yg_CheckedChanged;
             // 
@@ -2071,7 +2071,7 @@
             ForeColor = SystemColors.WindowText;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "dhsForm";
-            Text = "嘤语打分_大荒狩#2.1.0 beta";
+            Text = "嘤语打分_大荒狩#2.1.0";
             Load += dhsForm_Load;
             ResumeLayout(false);
             PerformLayout();
